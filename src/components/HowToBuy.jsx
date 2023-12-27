@@ -5,6 +5,7 @@ import htbSL2 from "../assets/img/htb-s-l2.png";
 import htbSL3 from "../assets/img/htb-s-l3.png";
 import htbSL4 from "../assets/img/htb-s-l4.png";
 import htbImg from "../assets/img/htb_img.png";
+import howtoTopbuyShap from "../assets/img/howtobuy_top_shap.png";
 
 export default function HowToBuy(){
     const title = "HOW <span>TO BUY</span>";
@@ -39,6 +40,9 @@ export default function HowToBuy(){
 
     return(
         <div className="howtobuy" id='howtobuy'>
+            <figure className='howtobuy_top_shap'>
+                <img src={howtoTopbuyShap} alt="get momo top shap" />
+            </figure>
             <Container>
                 <Row className="section_M_title">
                     <Col lg={5} className='text-center'>

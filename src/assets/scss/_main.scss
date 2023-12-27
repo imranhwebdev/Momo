@@ -5,17 +5,15 @@
     position: relative;
     background-color: $_bgcolor;
     z-index: 1;
-    &::before{
+    & .banner_bottom_shap{
         position: absolute;
-        content: "";
         left: 0;
-        bottom: 0;
+        bottom: -30px;
         width: 100%;
-        height: 300px;
-        background-image: url('../img/hero-sec-bottom-shap.png');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size:cover;
+        height: auto;
+        & img{
+            width: 100%;
+        }
     }
     @include sm {
         padding-bottom: 50px;
@@ -149,35 +147,173 @@
 /* ====================================== *
 *  ========= How to buy CSS Start ======= *
 *  ====================================== */
-.howtobuy__all_services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    @include mmd{
-        grid-template-columns: repeat(3, 1fr);
-
+.howtobuy{
+    position: relative;
+    z-index: 1;
+    padding-top: 380px;
+    padding-bottom: 30px;
+    background: #FF90E8;
+    & .howtobuy_top_shap{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        & img{
+            width: 100%;
+        }
     }
-    @include sm{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-    @include ssm{
-        grid-template-columns: repeat(1, 1fr);
-
+    & .howtobuy__all_services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include mmd{
+            grid-template-columns: repeat(3, 1fr);
+    
+        }
+        @include sm{
+            grid-template-columns: repeat(2, 1fr);
+    
+        }
+        @include ssm{
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+        
+        & .single__service_item{
+            position: relative;
+            padding:40px 24px 0px 24px;
+            border-radius: 16px;
+            padding-bottom: 180px;
+            .htb_s_l{
+                position: absolute;
+                right: 0;
+                bottom: 24px;
+            }
+        }
+        & .single__service_item:nth-child(1){
+            background: #23A094;
+        }
+        & .single__service_item:nth-child(2){
+            border: 2px solid #000;
+            background: #FFC900;
+            box-shadow: 3px 3px 0px 0px #000;
+        }
+        & .single__service_item:nth-child(3){
+            border: 1px solid var(--B60, #B3B9C4);
+            background: #F1F333;
+        }
+        & .single__service_item:nth-child(4){
+            border: 2px solid #000;
+            background: #FF90E8;
+        }
     }
 }
+
 
 .htb_right{
     border-radius: 16px;
     border: 4px solid #F1F333;
     box-shadow: 5px 5px 0px 0px #000;
+    height: 625px;
     & iframe{
         width: 100%;
-        height: 625px;
+        height: 100%;
         border-radius: 16px;
     }
 }
 
-
+/* ======================================== *
+*  ========== Tokenomics CSS Start ======== *
+*  ======================================== */
+.tokenomics{
+    position: relative;
+    z-index: 1;
+    padding-top: 330px;
+    & .tokenomics_top_shap{
+        position: absolute;
+        left: 0;
+        top: -20px;
+        width: 100%;
+        height: auto;
+        & img{
+            width: 100%;
+        }
+    }
+}
+/* ====================================== *
+*  ========== Momo Map CSS Start ======== *
+*  ====================================== */
+.momomap_area{
+    padding-top: 372px;
+    padding-bottom: 100px;
+    background-color: #FFC900;
+    position: relative;
+    z-index: 1;
+    @include lg{
+        padding-top: 250px;
+    }
+    @include mmd{
+        padding-top: 170px;
+        padding-bottom: 80px;
+    }
+    @include sm{
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    & .momo__map__services{
+        padding-top: 88px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            padding:0 2%;
+        }
+        @include mmd{
+            grid-template-columns: repeat(2, 1fr);
+            padding:0 3%;
+        }
+        @include sm{
+            grid-template-columns: repeat(1, 1fr);
+            padding:0 10%;
+        }
+        @include ssm{
+            padding:0 3%;
+        }
+        & .single_service_item{
+            padding:32px 24px 102px;
+            border-radius: 16px;
+            border: 1px solid #281F00;
+        }
+        & .single_service_item:nth-child(1){
+            background: #23A094;
+            box-shadow: 10px 10px 0px 0px #000;
+        }
+        & .single_service_item:nth-child(2){
+            background: #FF7051;
+            box-shadow: 10px 10px 0px 0px #000;
+        }
+        & .single_service_item:nth-child(3){
+            background: #F1F333;
+            box-shadow: 10px 10px 0px 0px #000;
+        }
+        & .single_service_item:nth-child(4){
+            background: #FF90E8;
+            box-shadow: 10px 10px 0px 0px #000;
+        }
+    }
+    & .momomap_top_shap{
+        position: absolute;
+        left: 0;
+        top: -10px;
+        width: 100%;
+        height: auto;
+        & img{
+            width: 100%;
+        }
+    }
+}
 
 
 /* ====================================== *
@@ -200,5 +336,21 @@
         left: 0;
         width: 100%;
         height: 320px;
+        & img{
+            width: 100%;
+        }
+    }
+
+    @include lg{
+        padding-top: 250px;
+        padding-bottom: 220px;
+    }
+    @include mmd{
+        padding-top: 220px;
+        padding-bottom: 150px;
+    }
+    @include sm{
+        padding-top: 150px;
+        padding-bottom: 100px;
     }
 }

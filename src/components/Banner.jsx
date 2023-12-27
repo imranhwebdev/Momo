@@ -8,6 +8,7 @@ import socialIcon4 from '../assets/img/social-icon4.svg';
 import socialIcon5 from '../assets/img/social-icon5.svg';
 import star2 from '../assets/img/Star-2.png';
 import copyTxt from '../assets/img/copy.png';
+import banner_bottom_shap from '../assets/img/hero-sec-bottom-shap.png';
 
 export default function Banner(){
     const [textToCopy, setTextToCopy] = useState('2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4');
@@ -63,6 +64,9 @@ export default function Banner(){
                         </radialGradient>
                     </defs>
                 </svg>
+            </figure>
+            <figure className='banner_bottom_shap'>
+                <img src={banner_bottom_shap} alt="" />
             </figure>
             <Container>
                 <Row className='align-items-center'>
