@@ -71,7 +71,7 @@ export default function Footer(){
                 <Row className='footer_top'>
                     <Col md={6}>
                         <a href="/">
-                            <figure>
+                            <figure className='footer_logo'>
                                 <img src={footerLogo} alt="footer logo" />
                             </figure>
                         </a>
@@ -92,12 +92,12 @@ export default function Footer(){
 
                     </Col>
                     <Col sm={12}>
-                        <div className="footer__middle__content">
+                        <div className="footer__middle__content text-center">
                             <p>{footerMiddleContent}</p>
                         </div>
                     </Col>
                     
-                    <Col sm={12}>
+                    <Col sm={12} className='text-center'>
                         <div className="footer__social">
                             {socialIcons.map((socialIcon, index) => (
                                 <a target='_target' key={index} href={socialIcon.link} className="social_icons">

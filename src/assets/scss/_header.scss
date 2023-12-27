@@ -9,13 +9,7 @@
         padding-top: 15px;
     }
     & .header__logo{
-        min-width: 357px;
-        @include lg{
-            min-width: 150px;
-        }
-        @include sm{
-            min-width: 150px;
-        }
+        min-width: 165px;
     }
     @include mmd {
         .navbar-toggler {
@@ -34,19 +28,6 @@
         }
         & .navbar-nav {
             display: inherit;
-            & .boxed__btn {
-                margin-top: 15px;
-                display: inline-block;
-                @include mmd{
-                    padding: 15px 35px !important;
-                    margin-top: 20px;
-                }
-                @include sm{
-                    padding: 15px 25px !important;
-                    margin-top: 20px;
-                    margin-right: 8px;
-                }
-            }
         }
     }
     & .container{
@@ -72,20 +53,17 @@
         }
     }
     & .boxed__btn{
-        padding: 16px 40px;
-        border-radius: 40px;
-        // border: 1.5px solid $_212B3A;
         display: inline-block;
-        @include font-16;
-        font-weight: 500;
-        margin-right: 16px;
-        opacity: 1;
-        background-color: #141C24;
-        &:hover{
-            // border: 1.5px solid $primary;
-            // box-shadow: 1px 0px 10px 0px $primary;
-            color: $_white !important;
-        }
+        border-radius: 80px;
+        border: 1px solid #000;
+        background: $_white;
+        box-shadow: 5px 5px 0px 0px #000;
+        color: #060205;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+        padding: 14px 24px !important;
+        height: 56px;
     }
 }
 
