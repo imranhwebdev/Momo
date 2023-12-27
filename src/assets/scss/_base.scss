@@ -1,0 +1,176 @@
+html, html body{
+    overflow-x: hidden;
+}
+
+  @font-face {
+    font-family: 'MabryPro-Light';
+    src: url('../fonts/MabryPro-Light.woff2') format('woff2'),
+        url('../fonts/MabryPro-Light.woff') format('woff'),
+        url('../fonts/MabryPro-Light.ttf') format('truetype');
+    font-weight: 300; /* Regular */
+  }
+  
+  @font-face {
+    font-family: 'MabryPro-Regular';
+    src: url('../fonts/MabryPro-Regular.woff2') format('woff2'),
+        url('../fonts/MabryPro-Regular.woff') format('woff'),
+        url('../fonts/MabryPro-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+  }
+
+  @font-face {
+    font-family: 'MabryPro-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+        url('../fonts/MabryPro-Medium.woff') format('woff'),
+        url('../fonts/MabryPro-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+  }
+  
+
+  @font-face {
+    font-family: 'MabryPro-Bold';
+    src: url('../fonts/MabryPro-Bold.woff2') format('woff2'),
+        url('../fonts/MabryPro-Bold.woff') format('woff'),
+        url('../fonts/MabryPro-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+  }
+  
+body {
+    font-family: 'MabryPro-Medium';
+    @include font-20;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satoshi-Bold';
+    font-weight: bold;
+};
+
+h1{
+    @include font-120;
+    line-height: 1.4
+}
+h2{
+    @include font-54;
+}
+h3{
+    @include font-40;
+}
+h4{
+    @include font-22;
+}
+h5{
+    @include font-20;
+}
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    outline: none;
+    @include transition;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #f3f3f3;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    @include transition;
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// input[type=number] {
+//     -moz-appearance: textfield;
+// }
+
+.container {
+    max-width: 1528px;
+}
+
+.boxed__btn, .inline__btn {
+    font-family: 'Satoshi-Medium';
+    display: inline-block;
+    border: 1.5px solid transparent;
+    border-radius: 40px;
+    color: $_white;
+    // background: $_0F1919;
+    backdrop-filter: blur(27px);
+    padding: 22px 40px;
+    @include font-20;
+    font-weight: 500;
+    box-sizing: border-box;
+    @include sm {
+        padding: 15px 30px;
+    }
+    &:hover {
+        // border: 1.5px solid $primary;
+        box-shadow: 1px 0px 10px 0px #15B887;
+    }
+
+}
+
+
+.inline__btn{
+    @include font-16;
+    padding: 16px 40px;
+    // border: 1.5px solid $primary;
+    // box-shadow: 1px 0px 10px 0px $primary;
+    background: transparent;
+    &:hover{
+        // background: $_0F1919;
+        backdrop-filter: blur(27px);
+        // border: 1.5px solid $_212B3A;
+        // box-shadow: 1px 0px 10px 0px $_212B3A;
+    }
+}
+.section__title{
+    & h2{
+        margin-bottom: 28px;
+        text-transform: capitalize;
+    }
+    & p{
+        @include font-25;
+        opacity: 0.78;
+        font-weight: 400;
+    }
+}
