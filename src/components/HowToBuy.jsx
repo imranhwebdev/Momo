@@ -40,7 +40,7 @@ export default function HowToBuy(){
     return(
         <div className="howtobuy" id='howtobuy'>
             <Container>
-                <Row className="section__title">
+                <Row className="section_M_title">
                     <Col lg={5} className='text-center'>
                         <h2 dangerouslySetInnerHTML={{ __html: title }} />
                     </Col>

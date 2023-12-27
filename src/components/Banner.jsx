@@ -71,11 +71,13 @@ export default function Banner(){
                             <span>{subtitle}</span> 
                             <h1>{title}</h1>
                             <p>{desc}</p>
-                            {buttonData.map((button, index) => (
-                                <a target='_target' key={index} href={button.link} className="social_icons">
-                                    <img src={button.socialIcon} alt="" />
-                                </a>
-                            ))}
+                            <div className="social__icons">
+                                {buttonData.map((button, index) => (
+                                    <a target='_target' key={index} href={button.link} className="social_icons">
+                                        <img src={button.socialIcon} alt="" />
+                                    </a>
+                                ))}
+                            </div>                            
                         </div>
                     </Col>
                     <Col lg={6}>
