@@ -20,12 +20,12 @@ html, html body{
 
   @font-face {
     font-family: 'MabryPro-Medium';
-    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    src: url('../fonts/MabryPro-Medium.woff2') format('woff2'),
         url('../fonts/MabryPro-Medium.woff') format('woff'),
         url('../fonts/MabryPro-Medium.ttf') format('truetype');
     font-weight: 500; /* Medium */
   }
-  
+
 
   @font-face {
     font-family: 'MabryPro-Bold';
@@ -33,6 +33,14 @@ html, html body{
         url('../fonts/MabryPro-Bold.woff') format('woff'),
         url('../fonts/MabryPro-Bold.ttf') format('truetype');
     font-weight: 700; /* Bold */
+  }
+
+  @font-face {
+    font-family: 'MabryPro-Black';
+    src: url('../fonts/MabryPro-Black.woff2') format('woff2'),
+        url('../fonts/MabryPro-Black.woff') format('woff'),
+        url('../fonts/MabryPro-Black.ttf') format('truetype');
+    font-weight: 900; /* Bold */
   }
 
   @font-face {
@@ -162,7 +170,6 @@ input::-webkit-inner-spin-button {
 .section__title{
     & h2{
         margin-bottom: 28px;
-        text-transform: capitalize;
     }
     & p{
         // @include font-25;

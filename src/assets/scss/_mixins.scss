@@ -132,13 +132,13 @@
     }
 }
 
-// @mixin font-18 {
-//     font-size: 18px;
-//     line-height: calc(27px/18px);
-//     @include mmd {
-//         font-size: 16px;
-//     }
-// }
+@mixin font-18 {
+    font-size: 18px;
+    line-height: calc(27px/18px);
+    @include mmd {
+        font-size: 16px;
+    }
+}
 
 @mixin font-16 {
     font-size: 16px;

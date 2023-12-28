@@ -38,14 +38,20 @@
         font-family: 'MabryPro-Medium';
         display: inline-block;
         border-radius: 80px;
-        border: 1px solid #000;
+        border: 1px solid $_black;
         background: $_white;
-        box-shadow: 5px 5px 0px 0px #000;
+        box-shadow: 5px 5px 0px 0px $_black;
         color: $_060205;
         @include font-20;
         font-weight: 700;
         line-height: 120%; /* 24px */
         padding: 14px 24px !important;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background: $_black;
+            color: $_white;
+            box-shadow: 5px 5px 0px 0px $_white;
+        }
     }
     .header_socials{
         margin-right: 8px;
@@ -55,6 +61,7 @@
             display: inline-block;
             align-items: center;
             margin-right: 8px;
+            transition: all .3s ease-in-out;
             a{
                 width: 48px;
                 height: 48px;
@@ -69,6 +76,10 @@
                 img{
                     width: 22px;
                 }
+            }
+            &:hover{
+                border: 1px solid $_white;
+                    
             }
         }
         @include mmd{

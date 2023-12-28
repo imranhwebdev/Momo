@@ -835,7 +835,83 @@
         padding-bottom: 150px;
     }
     @include sm{
-        padding-top: 150px;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    & .section__title{
+        max-width: 858px;
+        margin: 0 auto 70px;
+        position: relative;
+        z-index: 9;
+        @include sm{
+            margin: 0 auto 40px;
+        }
+        & h2{
+            text-transform: uppercase !important;
+            letter-spacing: 2.48px;
+            line-height: 1.2em;
+            margin-bottom: 48px;
+            @include sm{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    & .boxed_btn{
+        border-radius: 90px;
+        border: 1px solid #000;
+        background: $_FFC900;
+        box-shadow: 5px 5px 0px 0px #000;
+        color: $_black;
+        @include font-20;
+        font-family: 'MabryPro-Black';
+        line-height: 1.2em;
+        min-width: 637px;
+        margin: 0 auto;
+        padding: 36px;
+        display: inline-block;
+        margin-bottom: 27px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: $_FFC900;
+            background: $_black;
+            box-shadow: 5px 5px 0px 0px $_FFC900;
+        }
+        @include mmd{
+            min-width: 400px;
+        }
+        @include sm{
+            min-width: 300px;
+            padding: 30px;
+        }
+    }
+    & .social__icons {
+        display: block;
+        a{
+            border-radius: 50%;
+            border: 1px solid #000;
+            background: $_white;
+            box-shadow: 3px 3px 0px 0px #000;
+            display: inline-block;
+            line-height: 70px;
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            margin-right: 16px;
+            &:hover{
+                transform: translateY(-15px);
+            }
+            @include mmd{
+                margin-top: 20px;
+                margin-bottom: 30px;
+                height: 50px;
+                width: 50px;
+                line-height: 15px;
+                padding: 12px;
+
+            }
+        }
     }
 }
+
+

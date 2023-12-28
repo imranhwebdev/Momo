@@ -2,63 +2,114 @@
 
 .footer_area {
     padding-top: 88px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     background-color: #060205;
-    // @include font-14;
+    @include mmd{
+        padding-top: 70px;
+    }
     & .footer_top{
         & .footer_logo{
             max-width: 357px;
+            @include mmd{
+                max-width: 200px;
+            }
+            @include sm{
+                max-width: 200px;
+                margin: 0 auto 30px;
+            }
         }
     }
     & .footer__middle__content{
         padding:40px 0;
+        margin:40px 0;
+        color: $_A595A1;
+        @include font-18;
+        border-top: 1px solid #33182C;
+        border-bottom: 1px solid #33182C;
     }
-    & .footer_top_right{
-       & h5{
-            font-family: 'Satoshi-Medium';
-            margin-bottom: 20px;
-            font-weight: 400;
-            text-transform: capitalize;
-            line-height: 160%;
+    & .footer__menu{
+        text-align: end;
+        @include sm{
+            text-align: center;
         }
-        & ul{
-           & li{
-                display: inline-block;
-                @include transition;
-                & a{
-                    width: 35px;
-                    height: 35px;
-                    padding: 7px;
-                    color: $_white;
-                    margin-left: 10px;
-                    background: #07303D;
-                    border-radius: 5px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 17px;
-                }
-                &:hover a{
-                    transform: scaleX(-1);
-                    box-shadow: 1px 0px 10px 0px #15B887;
-                }
+        & li{
+            display: inline-block;
+            @include transition;
+            & a{
+                color: $_B6B6B6;
+                margin-left: 32px;
+                @include font-24;
+                font-family: 'MabryPro-Medium';
+            }
+            &:hover a{
+                color: $_white;
             }
         }
     }
-    & .footer_bottom{
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        margin-top: 70px;
-        padding-top: 15px;
-        & .copy__right{
-            // @include font-14;
-        }
+
+    .copytoclipboard {
+        text-align: right;
+        margin-top: 20px;
+        color: $_FFC900;
+        display: flex;
+        gap: 10px;
+        justify-content: end;
         @include sm{
-            margin-top: 40px;
-            padding-top: 30px;
+            justify-content: center;
+            text-align: center;
+        }
+        & input{
+            padding: 0;
+            background: transparent;
+            border: 0;
+            color: $_FFC900;
+            @include font-16;
+            max-width: 408px;
+            width: 100%;
+        }
+        & button{
+            padding: 0;
+            border: 0;
+            background: transparent;
+            margin-left: 5px;
+            margin-top: -10px;
+            position: relative;
+            & svg{
+                transition: all .3s ease-in-out;
+                &:hover{
+                    opacity: .5;
+                }
+            }
+            & .copyed{
+                color: $_FFC900;
+                position: absolute;
+                top: -12px;
+                right: 0;
+                font-size: 14px;
+            }
         }
     }
-    @include sm{
-        padding: 30px 0;
+    .footer__social{
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 16px;
+            a{  
+                display: inline-block;
+                border:2px solid transparent;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                &:hover{
+                    border:2px solid $_white;
+                }
+            }
+        
+    }
+    & .copyright{
+        color: $_A595A1;
+        @include font-18;
+
     }
 }
 
