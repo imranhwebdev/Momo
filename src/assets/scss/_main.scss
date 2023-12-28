@@ -11,15 +11,21 @@
         bottom: -30px;
         width: 100%;
         height: auto;
+        @include sm{
+            bottom: 0;
+        }
         & img{
             width: 100%;
         }
     }
-    @include sm {
-        padding-bottom: 120px;
-    }
     @include mmd {
         padding-top: 150px;
+    }
+    @include sm {
+        padding-bottom: 180px;
+    }
+    @include ssm {
+        padding-bottom: 130px;
     }
     &-content {
         z-index: 9;
@@ -302,6 +308,16 @@
     padding-top: 380px;
     padding-bottom: 5px;
     background: #FF90E8;
+    @include mmd{
+        padding-top: 220px;
+        padding-bottom: 100px;
+        
+    }
+    @include sm{
+        padding-top: 140px;
+        padding-bottom: 100px;
+        
+    }
     & .section_M_title{
         h2{
            span{
@@ -341,7 +357,10 @@
     & .howtobuy__all_services {
         padding-top:200px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));        
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));    
+        @include mmd{
+            padding-top: 50px;
+        }    
         & .single__service_item{
             position: relative;
             padding:40px 24px 0px 24px;
@@ -357,6 +376,16 @@
             & .content {
                 word-wrap: break-word;
                 padding-left: 39px;
+                h4{
+                    font-family: 'MabryPro-Medium';
+                    @include font-24;
+                    margin-bottom: 12px;
+                }
+                p{
+                    font-family: 'MabryPro-Medium';
+                    @include font-16;
+
+                }
             }
             & span{
                 position: absolute;
@@ -425,6 +454,10 @@
     figure{
         max-width: 570px;
         padding: 5%;
+        @include mmd{
+            margin: 0 auto;
+            padding-top: 0;
+        }
     }
 }
 .htb_right{
@@ -439,6 +472,10 @@
         height: 100%;
         border-radius: 16px;
     }
+    @include mmd{
+        margin: 0 auto;
+        height: 450px;
+    }
 }
 
 /* ======================================== *
@@ -448,9 +485,94 @@
     position: relative;
     z-index: 1;
     padding-top: 330px;
+    &::before{
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/tokenomics_bg_shap.png');
+        transform: translate(-50%, -36%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        z-index: -1;
+        @include mmd{
+            transform: translate(-50%, -48%);
+        }
+        @include sm{
+            transform: translate(-50%, -42%);
+        }
+    }
+    @include mmd{
+        padding-top: 130px;
+        padding-bottom: 70px;
+    }
     & .section-title{
         h2{
             text-transform: uppercase;
+        }
+    }
+    & .total_count{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        span{
+            font-family: 'MabryPro-Medium';
+            @include font-24;
+            color: $_black;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        h4{
+            @include font-32;
+            font-family: 'MabryPro-Bold';
+            line-height: 100%;
+            color: $_black;
+        }
+    }
+    & .tokencharts-list{
+        margin-bottom: 50px;
+        ul{
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                border-radius: 56px;
+                border: 1px solid $_060205;
+                background: $_white;
+                box-shadow: 4px 4px 0px 0px $_black;
+                padding: 10px 12px;
+                color: $_271423;
+                @include font-20;
+                position: relative;
+                padding-left: 42px;
+                display: inline-block;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 12px;
+                    top: 50%;
+                    width: 24px;
+                    height: 24px;
+                    background:#FF90E8;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                }
+                &:nth-child(2)::before{
+                    background:#FF7051;
+                }
+                &:nth-child(3)::before{
+                    background:#23A094;
+                }
+                &:nth-child(4)::before{
+                    background:#F1F333;
+                }
+                &:nth-child(4)::before{
+                    background:#FFC900;
+                }
+            }
         }
     }
     & .tokenomics_top_shap{
@@ -466,6 +588,103 @@
     & .chart__area {
         max-width: 700px;
         margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        & .donut_m_img{
+            max-width: 422px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+
+        }
+    }
+}
+
+.donut_bottom_area{
+    justify-content: space-between;
+    margin-top: 80px;
+    @include mmd{
+        margin-top: 40px;
+        flex-direction: column-reverse !important;
+    }
+    & .dbla{
+        position: relative;
+        z-index: 1;
+        max-width: 748px;
+        height: 200px;
+        padding: 29px 30px 90px 30px;
+        @include sm{
+            padding: 29px 20px 90px 20px;
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 180px;
+            background-image: url('../img/d-c-i.png');
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+        
+        img{
+            position: absolute;
+            z-index: 0;
+            top: -37px;
+            left: 0;
+        }
+
+    }
+    & .tokenomics_copyTxt{
+        position: relative;
+        border-radius: 16px;
+        border: 2px solid $_black;
+        background: $_white;
+        padding:24px 30px;
+        max-width: 473px;
+        @include font-32;
+        font-family: 'MabryPro-Medium';
+        text-decoration: underline;
+        color: $_271423;
+        display: flex;
+        gap: 7px;
+        @include mmd{
+            margin-bottom:50px;
+        }
+        input{
+            font-family: 'MabryPro-Regular';
+            padding: 0;
+            border: 0;
+            width: calc(100% - 35px);
+            text-decoration: underline;
+        }
+        button{
+            padding: 0;
+            background: $_white;
+            border: 0;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            margin-top: -5px;
+            transform: translateY(-50%);
+            & img{
+                transition: all .3s ease-in-out;
+                &:hover{
+                    opacity: .5;
+                }
+            }
+            & .copyed{
+                position: absolute;
+                top: -55px;
+                right: 5px;
+                font-size: 14px;
+            }
+        }
     }
 }
 /* ====================================== *
@@ -477,6 +696,36 @@
     background-color: #FFC900;
     position: relative;
     z-index: 1;
+    & .section_M_title{
+        h2{
+            text-align: left;
+           span{
+            display: block;
+            margin-left: 38%;
+            @include mmd{
+                display: inline-block;
+                margin-left: 0;
+            }
+           } 
+        }
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 16%);
+            height: 1px;
+            background: rgba(66, 82, 109, 0.50);
+            @include mmd{
+                width: calc(96% - 0%);
+                left: 2%;
+            }
+        }
+    }
+
+
+
     @include lg{
         padding-top: 250px;
     }
@@ -485,7 +734,11 @@
         padding-bottom: 80px;
     }
     @include sm{
-        padding-top: 120px;
+        padding-top: 170px;
+        padding-bottom: 60px;
+    }
+    @include ssm{
+        padding-top: 130px;
         padding-bottom: 60px;
     }
     & .momo__map__services{
@@ -497,17 +750,21 @@
         @include lg{
             grid-template-columns: repeat(3, 1fr);
             padding:0 2%;
+            padding-top: 50px;
         }
         @include mmd{
             grid-template-columns: repeat(2, 1fr);
             padding:0 3%;
+            padding-top: 50px;
         }
         @include sm{
             grid-template-columns: repeat(1, 1fr);
             padding:0 10%;
+            padding-top: 50px;
         }
         @include ssm{
             padding:0 3%;
+            padding-top: 50px;
         }
         & .single_service_item{
             padding:32px 24px 102px;

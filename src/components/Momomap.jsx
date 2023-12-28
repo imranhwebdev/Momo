@@ -53,14 +53,14 @@ export default function MomoMap(){
                 <img src={momomapImg} alt="get momo top shap" />
             </figure>
             <Container>
-                <Row className="section_M_title">
+                <Row className="section_M_title align-items-end">
                     <Col lg={5} className='text-center'>
                         <h2 dangerouslySetInnerHTML={{ __html: title }} />
                     </Col>
                     <Col lg={7}>
-                        <div className="section_right_txt_w_img">
+                        <div className="section_right_txt_w_img d-sm-flex align-items-end mb-2 gap-3">
                             <p>{desc}</p>
-                            <img src={exploreImg} alt="" />
+                            <img className='mt-3 mt-sm-0' src={exploreImg} alt="" />
                         </div>
                     </Col>
                 </Row>
