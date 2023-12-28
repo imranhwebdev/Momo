@@ -43,15 +43,15 @@ export default function Header(){
                         <Link to="tokenomics" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Tokenomics</Link>
                         <Link to="momomap" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Momomap</Link>
                     </Nav>
-                    <Nav>
-                        <ul>
+                        <ul className='header_socials'>
                             <li>
                                 <a href="/"><img src={socialLogo1} alt="telegram" /></a>
+                            </li>
+                            <li>
                                 <a href="/"><img src={socialLogo2} alt="twitter" /></a>
                             </li>
                         </ul>
                         <a href="/" className='boxed__btn'>GET MOMO</a>
-                    </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -4,7 +4,7 @@
     padding-top: 88px;
     padding-bottom: 40px;
     background-color: #060205;
-    @include font-14;
+    // @include font-14;
     & .footer_top{
         & .footer_logo{
             max-width: 357px;
@@ -50,7 +50,7 @@
         margin-top: 70px;
         padding-top: 15px;
         & .copy__right{
-            @include font-14;
+            // @include font-14;
         }
         @include sm{
             margin-top: 40px;

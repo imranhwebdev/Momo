@@ -9,8 +9,8 @@
 }
 
 
-@mixin font-120 {
-    font-size: 120px;
+@mixin font-124 {
+    font-size: 124px;
     line-height: 120%;
     @include xxl {
         font-size: 100px;
@@ -30,40 +30,40 @@
 }
 
 
-@mixin font-54 {
-    font-size: 54px;
+// @mixin font-54 {
+//     font-size: 54px;
+//     line-height: 120%;
+//     @include lg {
+//         font-size: 45px;
+//     }
+//     @include md {
+//         font-size: 40px;
+//     }
+//     @include sm {
+//         font-size: 35px;
+//     }
+// }
+
+
+
+// @mixin font-40 {
+//     font-size: 40px;
+//     line-height: 120%;
+//     @include lg {
+//         font-size: 35px;
+//     }
+//     @include md {
+//         font-size: 30px;
+//     }
+//     @include sm {
+//         font-size: 26px;
+//     }
+// }
+
+
+@mixin font-32 {
+    font-size: 32px;
     line-height: 120%;
-    @include lg {
-        font-size: 45px;
-    }
-    @include md {
-        font-size: 40px;
-    }
-    @include sm {
-        font-size: 35px;
-    }
-}
-
-
-
-@mixin font-40 {
-    font-size: 40px;
-    line-height: 120%;
-    @include lg {
-        font-size: 35px;
-    }
-    @include md {
-        font-size: 30px;
-    }
-    @include sm {
-        font-size: 26px;
-    }
-}
-
-
-@mixin font-30 {
-    font-size: 30px;
-    line-height: 160%;
     @include lg {
         font-size: 26px;
     }
@@ -76,23 +76,23 @@
 }
 
 
-@mixin font-27 {
-    font-size: 27px;
-    line-height: 160%;
-    @include lg {
-        font-size: 25px;
-    }
-    @include md {
-        font-size: 23px;
-    }
-    @include sm {
-        font-size: 20px;
-    }
-}
+// @mixin font-27 {
+//     font-size: 27px;
+//     line-height: 160%;
+//     @include lg {
+//         font-size: 25px;
+//     }
+//     @include md {
+//         font-size: 23px;
+//     }
+//     @include sm {
+//         font-size: 20px;
+//     }
+// }
 
-@mixin font-25 {
-    font-size: 25px;
-    line-height: 160%;
+@mixin font-26 {
+    font-size: 26px;
+    line-height: 150%;
     @include lg {
         font-size: 23px;
     }
@@ -104,23 +104,23 @@
     }
 }
 
-@mixin font-22 {
-    font-size: 22px;
-    line-height: 160%;
-    @include lg {
-        font-size: 20px;
-    }
-    @include md {
-        font-size: 18px;
-    }
-    @include sm {
-        font-size: 18px;
-    }
-}
+// @mixin font-22 {
+//     font-size: 22px;
+//     line-height: 160%;
+//     @include lg {
+//         font-size: 20px;
+//     }
+//     @include md {
+//         font-size: 18px;
+//     }
+//     @include sm {
+//         font-size: 18px;
+//     }
+// }
 
 @mixin font-20 {
     font-size: 20px;
-    line-height: calc(30px/20px);
+    line-height: 120%;
     @include lg {
         font-size: 18px;
     }
@@ -132,23 +132,23 @@
     }
 }
 
-@mixin font-18 {
-    font-size: 18px;
-    line-height: calc(27px/18px);
-    @include mmd {
-        font-size: 16px;
-    }
-}
+// @mixin font-18 {
+//     font-size: 18px;
+//     line-height: calc(27px/18px);
+//     @include mmd {
+//         font-size: 16px;
+//     }
+// }
 
-@mixin font-16 {
-    font-size: 16px;
-    line-height: 160%;
-    @include mmd {
-        font-size: 15px;
-    }
-}
+// @mixin font-16 {
+//     font-size: 16px;
+//     line-height: 160%;
+//     @include mmd {
+//         font-size: 15px;
+//     }
+// }
 
-@mixin font-14 {
-    font-size: 14px;
-    line-height: 160%;
-}
+// @mixin font-14 {
+//     font-size: 14px;
+//     line-height: 160%;
+// }

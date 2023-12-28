@@ -34,12 +34,18 @@ html, html body{
         url('../fonts/MabryPro-Bold.ttf') format('truetype');
     font-weight: 700; /* Bold */
   }
+
+  @font-face {
+    font-family: 'TuskerGrotesk';
+    src: url('../fonts/tusker-grotesk-font/TuskerGrotesk-5600Semibold.ttf') format('truetype');
+  }
   
 body {
-    font-family: 'MabryPro-Medium';
+    font-family: 'MabryPro-Regular';
     @include font-20;
     font-weight: 400;
     line-height: 1.6;
+    color: $_271423;
 }
 
 h1,
@@ -48,26 +54,26 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Satoshi-Bold';
+    font-family: 'TuskerGrotesk';
     font-weight: bold;
 };
 
 h1{
-    @include font-120;
+    @include font-124;
     line-height: 1.4
 }
-h2{
-    @include font-54;
-}
-h3{
-    @include font-40;
-}
-h4{
-    @include font-22;
-}
-h5{
-    @include font-20;
-}
+// h2{
+//     @include font-54;
+// }
+// h3{
+//     @include font-40;
+// }
+// h4{
+//     @include font-22;
+// }
+// h5{
+//     @include font-20;
+// }
 p {
     margin: 0;
 }
@@ -85,6 +91,7 @@ ol {
 }
 
 a {
+    font-family: 'MabryPro-Medium';
     text-decoration: none !important;
     @include transition;
 }
@@ -149,27 +156,13 @@ input::-webkit-inner-spin-button {
 
 }
 
-
-.inline__btn{
-    @include font-16;
-    padding: 16px 40px;
-    // border: 1.5px solid $primary;
-    // box-shadow: 1px 0px 10px 0px $primary;
-    background: transparent;
-    &:hover{
-        // background: $_0F1919;
-        backdrop-filter: blur(27px);
-        // border: 1.5px solid $_212B3A;
-        // box-shadow: 1px 0px 10px 0px $_212B3A;
-    }
-}
 .section__title{
     & h2{
         margin-bottom: 28px;
         text-transform: capitalize;
     }
     & p{
-        @include font-25;
+        // @include font-25;
         opacity: 0.78;
         font-weight: 400;
     }

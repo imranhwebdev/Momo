@@ -51,7 +51,7 @@ export default function Banner(){
         // Add more buttons as needed
       ];
     return(
-        <div className="banner">
+        <div className="banner" id='home'>
             <figure className='banner__shap'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1111" height="1189" viewBox="0 0 1111 1189" fill="none">
                     <path opacity="0.3" d="M718.882 1180.92L611.699 573.495L820.753 1153.45L718.882 1180.92ZM558.959 1188.14L718.882 1180.92L611.699 573.51L558.959 1188.14ZM504.503 1180.92L611.683 573.495L402.629 1153.47L504.503 1180.92ZM402.629 1153.47L611.699 573.495L260.566 1079.27L402.629 1153.47ZM216.98 1045.64L611.683 573.51L142.411 970.594L216.98 1045.64ZM142.411 970.594L611.699 573.495L56.2444 834.872L142.411 970.594ZM35.2314 783.815L611.683 573.495L0.764648 626.555L35.2314 783.815ZM0.764648 626.555L611.683 573.51L0.764648 520.45V626.555ZM7.94232 465.661L611.699 573.495L52.4393 309.365L7.94232 465.661ZM56.2444 312.129L611.683 573.51L108.985 220.24L56.2444 312.129ZM142.411 176.389L611.683 573.495L216.98 101.368L142.411 176.389ZM216.98 101.368L611.699 573.51L351.9 14.6769L216.98 101.368ZM402.629 -6.4638L611.683 573.495L504.503 -33.9188L402.629 -6.4638ZM504.503 -33.9188L611.683 573.495L664.423 -41.1401L504.503 -33.9188ZM718.882 -33.9362L611.699 573.495L820.737 -6.4638L718.882 -33.9362ZM820.737 -6.4638L611.683 573.495L962.818 67.7379L820.737 -6.4638ZM1006.39 101.368L611.683 573.495L1080.95 176.389L1006.39 101.368ZM1080.95 176.389L611.683 573.495L1167.12 312.112L1080.95 176.389ZM1188.15 363.167L611.683 573.495L1215.44 465.661L1188.15 363.167ZM1215.44 465.661L611.699 573.495L1222.62 626.535L1215.44 465.661ZM1215.44 681.341L611.683 573.51L1188.14 783.836L1215.44 681.341ZM1188.14 783.836L611.683 573.495L1114.4 926.763L1188.14 783.836ZM1080.97 970.594L611.683 573.495L1006.39 1045.62L1080.97 970.594ZM1006.39 1045.62L611.683 573.495L871.487 1132.31L1006.39 1045.62Z" fill="url(#paint0_radial_1_14)" fill-opacity="0.3"/>
@@ -69,11 +69,11 @@ export default function Banner(){
                 <img src={banner_bottom_shap} alt="" />
             </figure>
             <Container>
-                <Row className='align-items-center'>
+                <Row>
                     <Col lg={6}>
                         <div className="banner-content">
-                            <span>{subtitle}</span> 
-                            <h1>{title}</h1>
+                             
+                            <h1>{title} <span className='sub_title'>{subtitle}</span></h1>
                             <p>{desc}</p>
                             <div className="social__icons">
                                 {buttonData.map((button, index) => (
@@ -85,7 +85,7 @@ export default function Banner(){
                         </div>
                     </Col>
                     <Col lg={6}>
-                        <figure className='text-center text-lg-end px-5 px-md-0'>
+                        <figure className='text-center text-lg-end px-5 px-md-0 hero_right_img'>
                             <img src={bannerImg} alt="" />
                         </figure>
                         <div className="contract__box">
@@ -93,7 +93,7 @@ export default function Banner(){
                                 <img src={star2} alt="" />
                             </figure>
                             <div className="copytoclipboard">
-                                Contract: <input readOnly type="text"  value={textToCopy}
+                               <span>Contract:</span> <input readOnly type="text"  value={textToCopy}
                                     onChange={(e) => setTextToCopy(e.target.value)}/>
 
                                 <button onClick={handleCopyToClipboard}> {isCopied && <span className='coppied'> <span className='copyed'>Copyed</span> </span>} <img src={copyTxt}/></button>
