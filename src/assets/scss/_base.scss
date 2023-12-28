@@ -62,9 +62,10 @@ h1{
     @include font-124;
     line-height: 1.4
 }
-// h2{
-//     @include font-54;
-// }
+h2{
+    @include font-124;
+    line-height: 110%;
+}
 // h3{
 //     @include font-40;
 // }
@@ -82,7 +83,9 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+figure{
+    margin-bottom: 0;
+}
 ul,
 ol {
     list-style: none;

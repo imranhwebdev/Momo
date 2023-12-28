@@ -72,7 +72,6 @@ export default function Banner(){
                 <Row>
                     <Col lg={6}>
                         <div className="banner-content">
-                             
                             <h1>{title} <span className='sub_title'>{subtitle}</span></h1>
                             <p>{desc}</p>
                             <div className="social__icons">

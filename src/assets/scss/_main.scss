@@ -300,8 +300,34 @@
     position: relative;
     z-index: 1;
     padding-top: 380px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     background: #FF90E8;
+    & .section_M_title{
+        h2{
+           span{
+            display: block;
+            margin-left: 38%;
+            @include mmd{
+                display: inline-block;
+                margin-left: 0;
+            }
+           } 
+        }
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 16%);
+            height: 1px;
+            background: $_07090B;
+            @include mmd{
+                width: calc(96% - 0%);
+                left: 2%;
+            }
+        }
+    }
     & .howtobuy_top_shap{
         position: absolute;
         left: 0;
@@ -313,30 +339,32 @@
         }
     }
     & .howtobuy__all_services {
+        padding-top:200px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        @include mmd{
-            grid-template-columns: repeat(3, 1fr);
-    
-        }
-        @include sm{
-            grid-template-columns: repeat(2, 1fr);
-    
-        }
-        @include ssm{
-            grid-template-columns: repeat(1, 1fr);
-    
-        }
-        
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));        
         & .single__service_item{
             position: relative;
             padding:40px 24px 0px 24px;
             border-radius: 16px;
             padding-bottom: 180px;
+            display: inline-block;
             .htb_s_l{
                 position: absolute;
-                right: 0;
+                right: 40px;
                 bottom: 24px;
+                max-width: 170px;
+            }
+            & .content {
+                word-wrap: break-word;
+                padding-left: 39px;
+            }
+            & span{
+                position: absolute;
+                left: auto;
+                top: auto;
+                color: $_07090B;
+                @include font-24;
+                font-family: 'MabryPro-Medium';
             }
         }
         & .single__service_item:nth-child(1){
@@ -346,24 +374,66 @@
             border: 2px solid #000;
             background: #FFC900;
             box-shadow: 3px 3px 0px 0px #000;
+            transform: translateY(-40px);
         }
         & .single__service_item:nth-child(3){
-            border: 1px solid var(--B60, #B3B9C4);
+            border: 1px solid #B3B9C4;
             background: #F1F333;
+            transform: translateY(-88px);
         }
         & .single__service_item:nth-child(4){
             border: 2px solid #000;
             background: #FF90E8;
+            transform: translateY(-128px);
         }
     }
 }
-
-
+@media(max-width:1423px){
+    .howtobuy__all_services{
+        & .single__service_item:nth-child(4){
+            transform: translateY(0px) !important;
+        }
+    }
+    
+}
+@media(max-width:1073px){
+    .howtobuy__all_services{
+        & .single__service_item:nth-child(4){
+            transform: translateY(-37px) !important;
+        }
+        & .single__service_item:nth-child(3){
+            transform: translateY(0px) !important;
+        }
+    }
+    
+}
+@media(max-width:1073px){
+    .howtobuy__all_services{
+        & .single__service_item:nth-child(2){
+            transform: translateY(0px) !important;
+        }
+        & .single__service_item:nth-child(3){
+            transform: translateY(0px) !important;
+        }
+        & .single__service_item:nth-child(4){
+            transform: translateY(0px) !important;
+        }
+    }
+    
+}
+.htb_left_img{
+    figure{
+        max-width: 570px;
+        padding: 5%;
+    }
+}
 .htb_right{
     border-radius: 16px;
     border: 4px solid #F1F333;
     box-shadow: 5px 5px 0px 0px #000;
-    height: 625px;
+    height: 621px;
+    max-width: 645px;
+    margin-left: auto;
     & iframe{
         width: 100%;
         height: 100%;
@@ -378,6 +448,11 @@
     position: relative;
     z-index: 1;
     padding-top: 330px;
+    & .section-title{
+        h2{
+            text-transform: uppercase;
+        }
+    }
     & .tokenomics_top_shap{
         position: absolute;
         left: 0;

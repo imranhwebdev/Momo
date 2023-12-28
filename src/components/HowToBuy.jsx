@@ -20,19 +20,19 @@ export default function HowToBuy(){
         { 
             sl: 2, 
             title: "Set Up Your Wallet",
-            desc: "Download Phantom or your preferred solana wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting phantom.app",
+            desc: "Ensure there's some Sol in your wallet to exchange for $Momo. If you don't have any Sol , you can either buy it directly on exchange and transfer it to your wallet.",
             logo: htbSL2,
         },
         { 
             sl: 3, 
             title: "Set Up Your Wallet",
-            desc: "Download Phantom or your preferred solana wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting phantom.app",
+            desc: "Connect to Raydium. Visit raydium.io in your Google Chrome browser or within your Phantom app's browser. Connect your wallet, paste the $Momo token address (2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4) into Raydium, select $Momo, and confirm the transaction. When prompted by Phantom for a wallet signature, proceed with the signature.",
             logo: htbSL3,
         },
         { 
             sl: 4, 
             title: "Set Up Your Wallet",
-            desc: "Download Phantom or your preferred solana wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting phantom.app",
+            desc: "Switch your Sol for $Momo. We have 0 taxes, so you don't need to worry about a specific slippage rate. However, during times of market volatility, you may need to adjust the slippage settings as necessary.",
             logo: htbSL4,
         },
         // Add more buttons as needed
@@ -44,32 +44,34 @@ export default function HowToBuy(){
                 <img src={howtoTopbuyShap} alt="get momo top shap" />
             </figure>
             <Container>
-                <Row className="section_M_title">
-                    <Col lg={5} className='text-center'>
+                <Row className="section_M_title align-items-end">
+                    <Col lg={5}>
                         <h2 dangerouslySetInnerHTML={{ __html: title }} />
                     </Col>
                     <Col lg={7}>
-                            <p>{desc}</p>
+                            <p className='mb-3'>{desc}</p>
                     </Col>
                 </Row>   
                 <Row>
                     <Col>
                         <div className="howtobuy__all_services">
                         {htbServices.map((htbService, index) => (
-                            <div className="single__service_item">
+                            <div className="single__service_item" key={index}>
                                 <span>{htbService.sl}</span>
-                                <h4>{htbService.title}</h4>
-                                <p>{htbService.desc}</p>
-                                <figure className="htb_s_l">
-                                    <img src={htbService.logo} alt="how to buy single service logo" />
-                                </figure>
+                                <div className="content">
+                                        <h4>{htbService.title}</h4>
+                                        <p>{htbService.desc}</p>
+                                        <figure className="htb_s_l">
+                                            <img src={htbService.logo} alt="how to buy single service logo" />
+                                        </figure>
+                                </div>
                             </div>
                         ))}
                             
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                <Row className='mt-4 pt-4'>
                     <Col lg={6}>
                         <div className="htb_left_img">
                             <figure>
