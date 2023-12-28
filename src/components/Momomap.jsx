@@ -66,6 +66,14 @@ export default function MomoMap(){
                 </Row>
                 <Row>
                     <Col>
+                        <div className="momo_map_timeline">
+                            <ul className='momo_map_t_number'>
+                                <li><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                                <li><span>4</span></li>
+                            </ul>
+                        </div>
                         <div className="momo__map__services">
                             {services.map((service, index) => (
                                 <div className="single_service_item" key={index}>
