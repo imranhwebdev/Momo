@@ -67,7 +67,7 @@ export default function Footer(){
         // Add more buttons as needed
       ];
 
-    const footerMiddleContent = "$momo coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize.$MOMO is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.";
+    // const footerMiddleContent = "$momo coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize.$MOMO is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.";
     const currentYear = new Date().getFullYear();
     const copyrightText = `Copyright © ${currentYear} Official MoMo Token`;
     return(
@@ -108,11 +108,11 @@ export default function Footer(){
                         </div>
 
                     </Col>
-                    <Col sm={12}>
+                    {/* <Col sm={12}>
                         <div className="footer__middle__content text-center">
                             <p>{footerMiddleContent}</p>
                         </div>
-                    </Col>
+                    </Col> */}
                     
                     <Col sm={12} className='text-center'>
                         <div className="footer__social">
