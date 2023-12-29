@@ -42,11 +42,11 @@ export default function Footer(){
     const socialIcons = [
         { 
             Icon: socialIcon1, 
-            link: '#' 
+            link: 'https://t.me/momotoken2100' 
         },
         { 
             Icon: socialIcon2, 
-            link: '#' 
+            link: 'https://twitter.com/TokenMomo' 
         },
         { 
             Icon: socialIcon3, 
@@ -54,15 +54,15 @@ export default function Footer(){
         },
         { 
             Icon: socialIcon4, 
-            link: '#' 
+            link: 'https://solana.com/' 
         },
         { 
             Icon: socialIcon5, 
-            link: '#' 
+            link: 'https://solscan.io/token/2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4' 
         },
         { 
             Icon: socialIcon6, 
-            link: '#' 
+            link: 'https://www.geckoterminal.com/solana/pools/HY2VkFmtLsQKkSCiLNGv7y4EV9rretjWdu97QBMs2uFW'
         },
         // Add more buttons as needed
       ];
@@ -114,7 +114,7 @@ export default function Footer(){
                         </div>
                     </Col> */}
                     
-                    <Col sm={12} className='text-center'>
+                    <Col sm={12} className='text-center pt-3'>
                         <div className="footer__social">
                             {socialIcons.map((socialIcon, index) => (
                                 <a target='_target' key={index} href={socialIcon.link} className="social_icons">
