@@ -95,7 +95,7 @@ const Tokenomics = () => {
           });
       };
     return(
-        <div className="tokenomics">
+        <div className="tokenomics" id='tokenomics'>
           <figure className='tokenomics_top_shap'>
             <img src={tokenomics_top_shap} alt="" />
           </figure>

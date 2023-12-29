@@ -24,19 +24,19 @@ export default function Footer(){
    const footerMenus =  [
     {
         menuItem: 'Home',
-        menuLink: 'home',
+        menuLink: '#home',
     },
     {
         menuItem: 'Momomap',
-        menuLink: 'momomap',
+        menuLink: '#momomap',
     },
     {
         menuItem: 'Tokenmics',
-        menuLink: 'tokenmics',
+        menuLink: '#tokenomics',
     },
     {
         menuItem: 'How to buy',
-        menuLink: 'howtobuy',
+        menuLink: '#howtobuy',
     },
     ];
     const socialIcons = [
