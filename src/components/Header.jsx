@@ -45,13 +45,13 @@ export default function Header(){
                     </Nav>
                         <ul className='header_socials'>
                             <li>
-                                <a href="/"><img src={socialLogo1} alt="telegram" /></a>
+                                <a href="https://t.me/momotoken2100" target='_blank'><img src={socialLogo1} alt="telegram" /></a>
                             </li>
                             <li>
-                                <a href="/"><img src={socialLogo2} alt="twitter" /></a>
+                                <a href="https://twitter.com/TokenMomo" target='_blank'><img src={socialLogo2} alt="twitter" /></a>
                             </li>
                         </ul>
-                        <a href="/" className='boxed__btn'>GET MOMO</a>
+                        <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" target='_blank' className='boxed__btn'>GET MOMO</a>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

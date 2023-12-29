@@ -30,23 +30,23 @@ export default function Banner(){
     const buttonData = [
         { 
             socialIcon: socialIcon1, 
-            link: '#' 
+            link: 'https://t.me/momotoken2100' 
         },
         { 
             socialIcon: socialIcon2, 
-            link: '#' 
+            link: 'https://twitter.com/TokenMomo' 
         },
         { 
             socialIcon: socialIcon3, 
-            link: '#' 
+            link: 'https://solana.com/' 
         },
         { 
             socialIcon: socialIcon4, 
-            link: '#' 
+            link: 'https://solscan.io/token/2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4' 
         },
         { 
             socialIcon: socialIcon5, 
-            link: '#' 
+            link: 'https://www.geckoterminal.com/solana/pools/HY2VkFmtLsQKkSCiLNGv7y4EV9rretjWdu97QBMs2uFW' 
         },
         // Add more buttons as needed
       ];

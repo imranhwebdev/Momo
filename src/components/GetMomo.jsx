@@ -10,27 +10,27 @@ import getMomoTopShap from '../assets/img/get-momo-top-shap.png';
 
 export default function GetMomo(){
     const Momo_btn = "GET MOMO";
-    const Momo_btn_link = "https://google.com";
+    const Momo_btn_link = "https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in";
     const buttonData = [
         { 
             socialIcon: socialIcon1, 
-            link: '#' 
+            link: 'https://t.me/momotoken2100' 
         },
         { 
             socialIcon: socialIcon2, 
-            link: '#' 
+            link: 'https://twitter.com/TokenMomo' 
         },
         { 
             socialIcon: socialIcon3, 
-            link: '#' 
+            link: 'https://solana.com/' 
         },
         { 
             socialIcon: socialIcon4, 
-            link: '#' 
+            link: 'https://solscan.io/token/2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4' 
         },
         { 
             socialIcon: socialIcon5, 
-            link: '#' 
+            link: 'https://www.geckoterminal.com/solana/pools/HY2VkFmtLsQKkSCiLNGv7y4EV9rretjWdu97QBMs2uFW' 
         },
         // Add more buttons as needed
       ];
@@ -43,7 +43,7 @@ export default function GetMomo(){
                 <SectionTitle title={'Missed $PEPE Get MOMO'} />
                 <Row>
                     <Col lg={12} className='text-center'>
-                       <a href={Momo_btn_link} className='boxed_btn'>{Momo_btn}</a>
+                       <a target='_blank' href={Momo_btn_link} className='boxed_btn'>{Momo_btn}</a>
                        <div className="social__icons">
                             {buttonData.map((button, index) => (
                                 <a target='_target' key={index} href={button.link} className="social_icons">
