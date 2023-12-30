@@ -83,7 +83,7 @@ const Tokenomics = () => {
 
      // Calculate total percentage
     //  const totalPercentage = Area.series.reduce((a, b) => a + b);
-    const [textToCopy, setTextToCopy] = useState('2J4s......YQS4');
+    const [textToCopy, setTextToCopy] = useState('2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4');
     const [isCopied, setIsCopied] = useState(false);
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText(textToCopy)

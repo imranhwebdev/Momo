@@ -166,6 +166,7 @@
             display: flex;
             align-items: center;
             gap: 9px;
+            z-index: 9;
             @include sm{
             padding: 15px;
             }
@@ -184,7 +185,7 @@
                 position: absolute;
                 top: 50%;
                 right: 40px;
-                transform: translateY(-50%);
+                transform: translateY(-60%);
                 @include mmd{
                     right: 10px;
                 }
@@ -196,13 +197,14 @@
                 }
                 & .copyed{
                     position: absolute;
-                    top: -200%;
+                    top: -130%;
                     right: 0;
                     background: #FBCE2D;
                     padding: 10px 15px;
                     display: inline-block;
                     border-radius: 7px;
                     z-index: 9;
+                    font-size: 16px;
                 }
             }
             span{
@@ -598,7 +600,12 @@
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-
+            @include sm{
+                max-width: 260px;
+            }
+            @include ssm{
+                max-width: 170px;
+            }
         }
     }
 }

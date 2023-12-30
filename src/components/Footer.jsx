@@ -49,10 +49,6 @@ export default function Footer(){
             link: 'https://twitter.com/TokenMomo' 
         },
         { 
-            Icon: socialIcon3, 
-            link: '#' 
-        },
-        { 
             Icon: socialIcon4, 
             link: 'https://solana.com/' 
         },
