@@ -4,7 +4,7 @@ import exploreImg from "../assets/img/explore_more.png";
 import momomapImg from "../assets/img/momomap.png";
 
 export default function MomoMap(){
-    const title = "MOMO <span>Map</span>";
+    const title = "MOMO <span>MAP</span>";
     const desc = "Unveiling the Future of $Momo: Embark on this exciting journey with us as we navigate the ever-evolving crypto landscape. Explore the $Momo Coin Roadmap, and together, let's aim for the potential of 1,000X returns.";
     const services = [
         { 
