@@ -12,25 +12,25 @@ export default function HowToBuy(){
     const desc = "Ready to own some Momo tokens? Follow these straightforward steps to purchase your Momo tokens and join the Momo community";
     const htbServices = [
         { 
-            sl: 1, 
+            sl: '01.', 
             title: "Set Up Your Wallet",
             desc: "Download Phantom or your preferred solana wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting phantom.app",
             logo: htbSL1,
         },
         { 
-            sl: 2, 
+            sl: '02.', 
             title: "Set Up Your Wallet",
             desc: "Ensure there's some Sol in your wallet to exchange for $Momo. If you don't have any Sol , you can either buy it directly on exchange and transfer it to your wallet.",
             logo: htbSL2,
         },
         { 
-            sl: 3, 
+            sl: '03.', 
             title: "Set Up Your Wallet",
             desc: "Connect to Raydium. Visit raydium.io in your Google Chrome browser or within your Phantom app's browser. Connect your wallet, paste the $Momo token address (2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4) into Raydium, select $Momo, and confirm the transaction. When prompted by Phantom for a wallet signature, proceed with the signature.",
             logo: htbSL3,
         },
         { 
-            sl: 4, 
+            sl:'04.', 
             title: "Set Up Your Wallet",
             desc: "Switch your Sol for $Momo. We have 0 taxes, so you don't need to worry about a specific slippage rate. However, during times of market volatility, you may need to adjust the slippage settings as necessary.",
             logo: htbSL4,
