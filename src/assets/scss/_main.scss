@@ -378,7 +378,10 @@
             }
             & .content {
                 word-wrap: break-word;
-                padding-left: 39px;
+                padding-left: 58px;
+                @include sm{
+                    padding-left: 40px;
+                }
                 h4{
                     font-family: 'MabryPro-Medium';
                     @include font-24;
