@@ -6,10 +6,7 @@
     width: 100%;
     z-index: 9;
     @include sm {
-        padding-top: 15px;
-    }
-    & .header__logo{
-        min-width: 165px;
+        padding: 10px;
     }
     @include mmd {
         background-color: #FF8FE6;
@@ -32,7 +29,11 @@
         }
     }
     & .navbar-brand{
-        max-width: 136px;
+        max-width: 164px;
+        display: inline-block;
+        @include sm{
+            max-width: 130px;
+        }
     }
     & .boxed__btn{
         font-family: 'MabryPro-Medium';
@@ -51,6 +52,9 @@
             background: $_black;
             color: $_white;
             box-shadow: 5px 5px 0px 0px $_white;
+        }
+        @include lg{
+            margin-bottom: 16px;
         }
     }
     .header_socials{
@@ -123,6 +127,12 @@
     padding: 10px 0;
     transition: all .3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    @include lg{
+        padding: 0;
+    }
+    @include mmd{
+        padding: 0;
+    }
 }
 
 @media(max-width:1280px){

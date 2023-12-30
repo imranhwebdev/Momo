@@ -60,7 +60,7 @@ export default function MomoMap(){
                     <Col lg={7}>
                         <div className="section_right_txt_w_img d-sm-flex align-items-end mb-2 gap-3">
                             <p>{desc}</p>
-                            <img className='mt-3 mt-sm-0' src={exploreImg} alt="" />
+                            <img className='mt-3 mt-sm-0 d-none d-md-block' src={exploreImg} alt="" />
                         </div>
                     </Col>
                 </Row>
