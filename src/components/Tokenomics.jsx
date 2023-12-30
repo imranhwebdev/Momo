@@ -10,7 +10,7 @@ const Tokenomics = () => {
     const [Area, setArea] = useState({
         series: [25, 20, 25, 20, 10],
         options: {
-            colors: ['#FF90E8', '#FF90E8', '#23A094', '#F1F333', '#FFC900'],
+            colors: ['#FF90E8', '#FF7051', '#23A094', '#F1F333', '#FFC900'],
             labels: ['Early Investor - ', 'Liquidity - ', 'Marketing - ', 'Airdrop - ', 'Team\'s tokens - '],
             fill: {
               opacity: 1
