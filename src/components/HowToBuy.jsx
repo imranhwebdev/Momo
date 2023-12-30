@@ -12,7 +12,7 @@ export default function HowToBuy(){
     const desc = "Ready to own some Momo tokens? Follow these straightforward steps to purchase your Momo tokens and join the Momo community";
     const htbServices = [
         { 
-            sl: '01.', 
+            sl: '01', 
             title: "Set Up Your Wallet",
             desc: "Download Phantom or your preferred solana wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting phantom.app",
             logo: htbSL1,
