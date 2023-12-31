@@ -14,7 +14,7 @@ export default function MomoMap(){
                 "Security Audits",
                 "Coinmarketcap & Coingekco Listings",
                 "Making $Momo Trending on Social Media",
-                "20,000+Holders ——— 50,000 Holders",
+                "50,000+ Holders",
             ]
         },
         { 
@@ -23,7 +23,7 @@ export default function MomoMap(){
                 "$Momo Ecosystem Development",
                 "Market Expansion",
                 "Community Governance",
-                "50,000+Holder ———- 100,000 Holder",
+                "100,000+ Holder",
             ]
         },
         { 
