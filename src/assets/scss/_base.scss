@@ -101,6 +101,13 @@ ol {
     margin: 0;
 }
 
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
 a {
     font-family: 'MabryPro-Medium';
     text-decoration: none !important;

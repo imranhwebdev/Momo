@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import bfs_T_img from "../assets/img/bfsImg.png";
+import bitcoin from "../assets/img/bitcoin.png";
+import arrow from "../assets/img/Arrow-left-right.png";
 function BridgeFrom() {
   const icons = [
     {
@@ -12,6 +16,13 @@ function BridgeFrom() {
     </svg>,
     },
   ];
+
+  const wallet = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M13.8667 0C16.1891 0 18.1263 1.71807 18.5708 4.00062L19.2 4C21.851 4 24 6.23858 24 9V19C24 21.7614 21.851 24 19.2 24H4.8C3.5406 24 2.39448 23.4948 1.53824 22.6683L1.49098 22.622C0.572479 21.7112 0 20.4253 0 19V9C0 6.23858 2.14903 4 4.8 4L13.8667 0ZM19.0588 6H4.94118C3.38178 6 2.10584 7.26958 2.00626 8.87461L2 9.07692V18.9231C2 20.5544 3.21357 21.8893 4.74779 21.9935L4.94118 22H19.0588C20.6182 22 21.8942 20.7304 21.9937 19.1254L22 18.9231V18.2293L16.1396 18.2301C14.9608 18.2301 13.986 17.3506 13.8866 16.2387L13.8783 16.0513V14.816C13.8783 12.5287 15.7543 10.6422 18.0968 10.5148L18.3495 10.508L22 10.5067V9.07692C22 7.44556 20.7864 6.11072 19.2522 6.00655L19.0588 6ZM18 13.375C17.3373 13.375 16.8 13.9346 16.8 14.625C16.8 15.3154 17.3373 15.875 18 15.875C18.6627 15.875 19.2 15.3154 19.2 14.625C19.2 13.9346 18.6627 13.375 18 13.375ZM13.7255 2L9.332 4L16.4816 4.00021C16.0858 2.89203 15.0969 2.08653 13.9189 2.00655L13.7255 2Z" fill="#060205"/>
+    <path d="M18.0001 16.6665C19.1047 16.6665 20.0001 15.7711 20.0001 14.6665C20.0001 13.5619 19.1047 12.6665 18.0001 12.6665C16.8956 12.6665 16.0001 13.5619 16.0001 14.6665C16.0001 15.7711 16.8956 16.6665 18.0001 16.6665Z" fill="#FFC900"/>
+  </svg>;
+  const wallet_txt = "Connect wallet";
+  const oft = "Connect wallet to mint OFT tokens oand start transfering";
   const title = "Momo Bridge";
   return (
     <div className="bridge_form_wrapper">
@@ -22,6 +33,60 @@ function BridgeFrom() {
             <button>{icon.svgImg}</button>
           ))}
         </div>
+      </div>
+      <div className="bridge__form__inner">
+        <div className="bridge__form__item top">
+          <p className='bft_title'>from</p>
+          <div className="bridge__fs_n d-flex justify-content-between align-items-center">
+            <div className="bfs_box d-flex gap-1">
+              <img src={bfs_T_img} alt="" />
+              <Form.Select aria-label="Default select example" className="no-outline" contenteditable="true">
+                <option>usdt</option>
+                <option value="2">usdt 2</option>
+                <option value="3">usdt 3</option>
+              </Form.Select>
+            </div>
+            <div className="count_no">
+              <span>1.0000</span>
+            </div>
+          </div>
+          <div className="balence_box d-flex justify-content-between align-items-center">
+            <span>Balance : __</span>
+            <span>0</span>
+          </div>
+        </div>
+        <div className="middle_reverse text-center">
+          <img src={arrow} alt="" />
+        </div>
+        <div className="bridge__form__item bottom">
+          <p className='bft_title'>to</p>
+          <div className="bridge__fs_n d-flex justify-content-between align-items-center">
+            <div className="bfs_box d-flex gap-1">
+              <img src={bitcoin} alt="" />
+              <Form.Select aria-label="Default select example" className="no-outline" contenteditable="true">
+                <option>btc</option>
+                <option value="2">btc 2</option>
+                <option value="3">btc 3</option>
+              </Form.Select>
+            </div>
+            <div className="count_no">
+              <span>1.0000</span>
+            </div>
+          </div>
+          <div className="balence_box d-flex justify-content-between align-items-center">
+            <span>Balance : __</span>
+            <span>0</span>
+          </div>
+        </div>
+        <div className="recesive_destination">
+          <p>You will recesive</p>
+          <div className="d_result d-flex justify-content-between align-items-center">
+            <p>Gos on destination</p>
+            <span>-----</span>
+          </div>
+        </div>
+        <a href="/" className='wallet_btn d-flex align-items-center justify-content-center'>{wallet}{wallet_txt}</a>
+        <p className='oft_txt d-block text-center'>{oft}</p>
       </div>
     </div>
   )
