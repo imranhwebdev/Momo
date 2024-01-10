@@ -1025,11 +1025,17 @@
 
 
 
-
-
-.bridge__form{
+.bridge__page{
+    position: relative;
+    z-index: 1;
+    background-color: #FF90E8;
     padding-top: 252px;
     padding-bottom: 307px;
+    background-image: url('../img/bridge_bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
     & .bridge_form_wrapper{
         margin: 0 auto;
         max-width: 566px;
@@ -1046,3 +1052,4 @@
         }
     }
 }
+

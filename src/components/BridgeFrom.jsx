@@ -13,15 +13,13 @@ function BridgeFrom() {
     },
   ];
   return (
-    <div className='bridge__form'>
-      <div className="bridge_form_wrapper">
-        <div className="bridge__from__header d-flex align-items-center justify-content-between">
-          <h1>Momo Bridge</h1>
-          <div className="icon_box">
-            {icons.map((icon, index)=>(
-              <button>{icon.svgImg}</button>
-            ))}
-          </div>
+    <div className="bridge_form_wrapper">
+      <div className="bridge__from__header d-flex align-items-center justify-content-between">
+        <h1>Momo Bridge</h1>
+        <div className="icon_box">
+          {icons.map((icon, index)=>(
+            <button>{icon.svgImg}</button>
+          ))}
         </div>
       </div>
     </div>
