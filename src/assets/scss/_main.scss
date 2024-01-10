@@ -1050,6 +1050,22 @@
             font-family: 'MabryPro-Bold';
             margin-bottom: 0;
         }
+        button{
+            padding: 0;
+            border-radius: 33px;
+            border: 1px solid #000;
+            background: #FF90E8;
+            box-shadow: 2px 2px 0px 0px #000;
+            width: 33px;
+            height: 33px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 12px;
+            &:hover{
+                background: $_white;
+            }
+        }
     }
 }
 

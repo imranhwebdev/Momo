@@ -12,10 +12,11 @@ function BridgeFrom() {
     </svg>,
     },
   ];
+  const title = "Momo Bridge";
   return (
     <div className="bridge_form_wrapper">
       <div className="bridge__from__header d-flex align-items-center justify-content-between">
-        <h1>Momo Bridge</h1>
+        <h1>{title}</h1>
         <div className="icon_box">
           {icons.map((icon, index)=>(
             <button>{icon.svgImg}</button>
