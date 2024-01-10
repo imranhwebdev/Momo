@@ -76,19 +76,19 @@
 }
 
 
-@mixin font-28 {
-    font-size: 28px;
-    line-height: 160%;
-    @include lg {
-        font-size: 25px;
-    }
-    @include md {
-        font-size: 23px;
-    }
-    @include sm {
-        font-size: 20px;
-    }
-}
+// @mixin font-27 {
+//     font-size: 27px;
+//     line-height: 160%;
+//     @include lg {
+//         font-size: 25px;
+//     }
+//     @include md {
+//         font-size: 23px;
+//     }
+//     @include sm {
+//         font-size: 20px;
+//     }
+// }
 
 @mixin font-26 {
     font-size: 26px;

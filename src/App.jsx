@@ -1,19 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import Bridge from './pages/Bridge';
+import { React } from 'react'
+import Header from './components/Header';
+import Banner from './components/Banner';
+import About from './components/About';
+import HowToBuy from './components/HowToBuy';
+import Tokenomics from './components/Tokenomics';
+import MomoMap from './components/Momomap';
+import GetMomo from './components/GetMomo';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/bridge' element={<Bridge />} />
-        </Routes>
-      </Router>
-    </div>
-  );
+    <>
+      <Header />
+      <Banner />
+      <About />
+      <HowToBuy />
+      <Tokenomics />
+      <MomoMap />
+      <GetMomo />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App

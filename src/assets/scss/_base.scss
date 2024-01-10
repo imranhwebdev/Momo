@@ -101,13 +101,6 @@ ol {
     margin: 0;
 }
 
-select {
-    outline: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    border: 0 !important;
-}
-
 a {
     font-family: 'MabryPro-Medium';
     text-decoration: none !important;
@@ -121,7 +114,13 @@ button {
     outline: none;
     @include transition;
 }
-
+.copytoclipboard{
+    @include ssm{
+        & img{
+            max-width: 20px;
+        }
+    }
+}
 input:focus,
 textarea:focus,
 button:focus {
