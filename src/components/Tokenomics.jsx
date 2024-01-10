@@ -35,6 +35,7 @@ const Tokenomics = () => {
                 expandOnClick: false,
                 customScale: 1,
                 donut:{
+                  
                   size: '45%',
                     labels:{
                         show:true,
