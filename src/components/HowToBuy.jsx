@@ -46,10 +46,10 @@ export default function HowToBuy(){
             <Container>
                 <Row className="section_M_title align-items-end">
                     <Col lg={5}>
-                        <h2 dangerouslySetInnerHTML={{ __html: title }} />
+                        <h2 className='text-white' dangerouslySetInnerHTML={{ __html: title }} />
                     </Col>
                     <Col lg={7}>
-                            <p className='mb-3'>{desc}</p>
+                            <p className='mb-3 text-white'>{desc}</p>
                     </Col>
                 </Row>   
                 <Row>
@@ -73,7 +73,7 @@ export default function HowToBuy(){
                 </Row>
                 <Row className='mt-4 pt-4'>
                     <Col lg={6}>
-                        <div className="htb_left_img">
+                        <div className="htb_left_img pt-4 pt-lg-5">
                             <figure>
                                 <img src={htbImg} alt="" />
                             </figure>
@@ -81,7 +81,7 @@ export default function HowToBuy(){
                     </Col>
                     <Col lg={6}>
                         <div className="htb_right">
-                            <iframe src="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" frameborder="0"></iframe>
+                            <iframe src="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" frameBorder="0"></iframe>
                         </div>
                     </Col>
                 </Row>

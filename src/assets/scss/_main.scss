@@ -1,20 +1,21 @@
 /* Banner CSS */
+
 .banner {
     padding-top: 186px;
     padding-bottom: 315px;
     position: relative;
     background-color: $_bgcolor;
     z-index: 1;
-    & .banner_bottom_shap{
+    & .banner_bottom_shap {
         position: absolute;
         left: 0;
         bottom: -30px;
         width: 100%;
         height: auto;
-        @include sm{
+        @include sm {
             bottom: 0;
         }
-        & img{
+        & img {
             width: 100%;
         }
     }
@@ -31,7 +32,7 @@
         z-index: 9;
         position: relative;
         padding-top: 125px;
-        @include mmd{
+        @include mmd {
             padding-top: 30px;
         }
         & h1 {
@@ -42,10 +43,10 @@
             @include mmd {
                 line-height: 1.6;
             }
-            & .sub_title{
+            & .sub_title {
                 position: absolute;
-                top: -75px;
-                right: -135px;
+                top: -95px;
+                right: -145px;
                 letter-spacing: 3.2px;
                 @include font-32;
                 font-family: 'MabryPro-Bold';
@@ -54,26 +55,25 @@
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 width: 200px;
-                height: 130px;
+                height: 145px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 z-index: -1;
-                @include mmd{
+                color: $_060205;
+                padding-bottom: 12px;
+                @include mmd {
                     top: -36px;
                     right: -105px;
                     width: 150px;
                     height: 80px;
-
                 }
-                @include ssm{
+                @include ssm {
                     top: -36px;
                     right: -60px;
                     width: 130px;
                     height: 60px;
-
                 }
-
             }
         }
         & p {
@@ -81,14 +81,13 @@
             margin-bottom: 50px;
             @include font-26;
             max-width: 724px;
-            @include mmd{
+            @include mmd {
                 margin: 0 auto;
             }
         }
-
         & .social__icons {
             display: inline-block;
-            a{
+            a {
                 border-radius: 50%;
                 border: 1px solid #000;
                 background: $_white;
@@ -99,10 +98,10 @@
                 height: 80px;
                 width: 80px;
                 margin-right: 16px;
-                &:hover{
+                &:hover {
                     transform: translateY(-15px);
                 }
-                @include mmd{
+                @include mmd {
                     margin-top: 30px;
                     margin-bottom: 30px;
                     height: 50px;
@@ -113,53 +112,54 @@
                 }
             }
         }
-        @include mmd{
+        @include mmd {
             text-align: center;
         }
     }
-    & .banner__shap{
+    & .banner__shap {
         position: absolute;
         top: 0%;
         right: 0%;
         z-index: -1;
-        @include xxxl{
+        @include xxxl {
             top: 2%;
             right: 2%;
         }
-        @include lg{
+        @include lg {
             top: 2%;
             right: -20%;
         }
-        @include mmd{
+        @include mmd {
             top: auto;
             bottom: 0;
             right: 0;
         }
-        & svg{
-            @include sm{
+        & svg {
+            @include sm {
                 width: 100%;
             }
         }
     }
-    & .contract__box{
+    & .contract__box {
         position: relative;
         z-index: 1;
         width: 110%;
-        @include xl{
+        margin-top: 18px;
+        @include xl {
             width: 100%;
         }
-        @include lg{
+        @include lg {
             width: 100%;
         }
-        @include mmd{
+        @include mmd {
             width: 100%;
         }
-        & .copytoclipboard{
+        & .copytoclipboard {
             margin-top: -25px;
             position: relative;
             border-radius: 16px;
             border: 2px solid #000;
-            background: $_FFC900;
+            background: $_white;
             box-shadow: 5px 5px 0px 0px #000;
             padding: 24px 40px;
             z-index: -1;
@@ -167,18 +167,18 @@
             align-items: center;
             gap: 9px;
             z-index: 9;
-            @include sm{
-            padding: 15px;
+            @include sm {
+                padding: 15px;
             }
-            & input{
+            & input {
                 background: transparent;
                 border: 0;
                 width: calc(100% - 40px);
                 padding: 0;
                 @include font-20;
             }
-            & button{
-                background: $_FFC900;
+            & button {
+                background: transparent;
                 padding: 0 8px !important;
                 display: inline-block;
                 border: 0;
@@ -186,20 +186,20 @@
                 top: 50%;
                 right: 40px;
                 transform: translateY(-60%);
-                @include mmd{
+                @include mmd {
                     right: 10px;
                 }
-                & img{
+                & img {
                     transition: all .3s ease-in-out;
                 }
-                &:hover img{
+                &:hover img {
                     opacity: .5;
                 }
-                & .copyed{
+                & .copyed {
                     position: absolute;
                     top: -130%;
                     right: 0;
-                    background: #FBCE2D;
+                    background: $_white;
                     padding: 10px 15px;
                     display: inline-block;
                     border-radius: 7px;
@@ -207,77 +207,77 @@
                     font-size: 16px;
                 }
             }
-            span{
+            span {
                 font-size: 29px;
                 font-weight: 500;
                 color: $_060205;
                 margin-top: -7px;
-                @include mmd{
+                @include mmd {
                     font-size: 20px;
                     margin-top: 0px;
                 }
             }
         }
-        & .star2{
+        & .star2 {
             position: absolute;
             top: -50%;
-            left: 0;
+            left: -48px;
             z-index: -1;
         }
     }
-    & .hero_right_img{
-        img{
+    & .hero_right_img {
+        img {
             position: relative;
             z-index: 2;
-            @include xl{
-                padding:0 10%;
+            @include xl {
+                padding: 0 10%;
             }
-            @include lg{
-                padding:0 10%;
+            @include lg {
+                padding: 0 10%;
             }
         }
     }
-   
 }
+
 
 /* ================================= *
 *  ========= About CSS Start ======= *
 *  ================================= */
-.about_us{
+
+.about_us {
     position: relative;
     padding-top: 150px;
     padding-bottom: 210px;
-    & .about_img{
+    & .about_img {
         position: relative;
         z-index: 2;
     }
-    @include mmd{
+    @include mmd {
         padding-top: 70px;
         padding-bottom: 80px;
-
     }
-    & .about_content_box{
+    & .about_content_box {
         max-width: 1288px;
         margin: 0 auto;
-        margin-top: -85px;
+        margin-top: -70px;
         position: relative;
         display: inline-block;
         border-radius: 24px;
         border: 1px solid #000;
         box-shadow: 8px 10px 0px 0px #000;
         background-color: $_FFC900;
-        padding:65px 50px;
+        padding: 65px 50px;
         z-index: 1;
         overflow: hidden;
         @include font-32;
         font-weight: 400;
         line-height: 150%;
-        @include mmd{
+        color: $heading;
+        @include mmd {
             margin-top: -45px;
-            padding:50px 25px;
-
+            padding: 50px 25px;
         }
-        & .about_content_shap{
+        & .about_content_shap {
             position: absolute;
             left: 50%;
             top: 0;
@@ -285,7 +285,7 @@
             height: 100%;
             z-index: -1;
             transform: translateX(-50%);
-            svg{
+            svg {
                 width: 100%;
                 height: auto;
             }
@@ -295,7 +295,7 @@
         position: absolute;
         z-index: -1;
         top: 110px;
-        @include mmd{
+        @include mmd {
             top: 80px;
         }
     }
@@ -305,72 +305,71 @@
 /* ====================================== *
 *  ========= How to buy CSS Start ======= *
 *  ====================================== */
-.howtobuy{
+
+.howtobuy {
     position: relative;
     z-index: 1;
     padding-top: 380px;
     padding-bottom: 5px;
-    background: #FF90E8;
-    @include mmd{
+    background: $_bgcolor;
+    @include mmd {
         padding-top: 220px;
         padding-bottom: 100px;
-        
     }
-    @include sm{
+    @include sm {
         padding-top: 140px;
         padding-bottom: 100px;
-        
     }
-    & .section_M_title{
-        h2{
-           span{
-            display: block;
-            margin-left: 38%;
-            @include mmd{
-                display: inline-block;
-                margin-left: 0;
+    & .section_M_title {
+        h2 {
+            span {
+                display: block;
+                margin-left: 38%;
+                @include mmd {
+                    display: inline-block;
+                    margin-left: 0;
+                }
             }
-           } 
         }
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             bottom: 0;
             right: 0;
             width: calc(100% - 16%);
             height: 1px;
-            background: $_07090B;
-            @include mmd{
+            background: $_white;
+            @include mmd {
                 width: calc(96% - 0%);
                 left: 2%;
             }
         }
     }
-    & .howtobuy_top_shap{
+    & .howtobuy_top_shap {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
-        & img{
+        & img {
             width: 100%;
         }
     }
     & .howtobuy__all_services {
-        padding-top:200px;
+        padding-top: 200px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));    
-        @include mmd{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        @include mmd {
             padding-top: 50px;
-        }    
-        & .single__service_item{
+        }
+        & .single__service_item {
             position: relative;
-            padding:40px 24px 0px 24px;
+            padding: 40px 24px 0px 24px;
             border-radius: 16px;
             padding-bottom: 180px;
             display: inline-block;
-            .htb_s_l{
+            .htb_s_l {
                 position: absolute;
                 right: 40px;
                 bottom: 24px;
@@ -379,21 +378,20 @@
             & .content {
                 word-wrap: break-word;
                 padding-left: 58px;
-                @include sm{
+                @include sm {
                     padding-left: 40px;
                 }
-                h4{
+                h4 {
                     font-family: 'MabryPro-Medium';
                     @include font-24;
                     margin-bottom: 12px;
                 }
-                p{
+                p {
                     font-family: 'MabryPro-Medium';
                     @include font-16;
-
                 }
             }
-            & span{
+            & span {
                 position: absolute;
                 left: auto;
                 top: auto;
@@ -402,96 +400,100 @@
                 font-family: 'MabryPro-Medium';
             }
         }
-        & .single__service_item:nth-child(1){
-            background: #23A094;
+        & .single__service_item:nth-child(1) {
+            background: #66bcf2;
         }
-        & .single__service_item:nth-child(2){
+        & .single__service_item:nth-child(2) {
             border: 2px solid #000;
-            background: #FFC900;
+            background: #05f2db;
             box-shadow: 3px 3px 0px 0px #000;
             transform: translateY(-40px);
         }
-        & .single__service_item:nth-child(3){
+        & .single__service_item:nth-child(3) {
             border: 1px solid #B3B9C4;
-            background: #F1F333;
+            background: #f1f333;
             transform: translateY(-88px);
         }
-        & .single__service_item:nth-child(4){
+        & .single__service_item:nth-child(4) {
             border: 2px solid #000;
-            background: #FF90E8;
+            background: #50ff96;
             transform: translateY(-128px);
         }
     }
 }
-@media(max-width:1423px){
-    .howtobuy__all_services{
-        & .single__service_item:nth-child(4){
+
+@media(max-width:1423px) {
+    .howtobuy__all_services {
+        & .single__service_item:nth-child(4) {
             transform: translateY(0px) !important;
         }
     }
-    
 }
-@media(max-width:1073px){
-    .howtobuy__all_services{
-        & .single__service_item:nth-child(4){
+
+@media(max-width:1073px) {
+    .howtobuy__all_services {
+        & .single__service_item:nth-child(4) {
             transform: translateY(-37px) !important;
         }
-        & .single__service_item:nth-child(3){
+        & .single__service_item:nth-child(3) {
             transform: translateY(0px) !important;
         }
     }
-    
 }
-@media(max-width:1073px){
-    .howtobuy__all_services{
-        & .single__service_item:nth-child(2){
+
+@media(max-width:1073px) {
+    .howtobuy__all_services {
+        & .single__service_item:nth-child(2) {
             transform: translateY(0px) !important;
         }
-        & .single__service_item:nth-child(3){
+        & .single__service_item:nth-child(3) {
             transform: translateY(0px) !important;
         }
-        & .single__service_item:nth-child(4){
+        & .single__service_item:nth-child(4) {
             transform: translateY(0px) !important;
         }
     }
-    
 }
-.htb_left_img{
-    figure{
+
+.htb_left_img {
+    figure {
         max-width: 570px;
         padding: 5%;
-        @include mmd{
-            margin: 0 auto;
+        margin: 0 auto;
+        @include mmd {
             padding-top: 0;
         }
     }
 }
-.htb_right{
+
+.htb_right {
     border-radius: 16px;
     border: 4px solid #F1F333;
     box-shadow: 5px 5px 0px 0px #000;
     height: 621px;
     max-width: 645px;
     margin-left: auto;
-    & iframe{
+    & iframe {
         width: 100%;
         height: 100%;
         border-radius: 16px;
     }
-    @include mmd{
+    @include mmd {
         margin: 0 auto;
         height: 450px;
     }
 }
 
+
 /* ======================================== *
 *  ========== Tokenomics CSS Start ======== *
 *  ======================================== */
-.tokenomics{
+
+.tokenomics {
     position: relative;
     z-index: 1;
     padding-top: 330px;
-    &::before{
+    &::before {
         position: absolute;
         content: "";
         left: 50%;
@@ -504,42 +506,42 @@
         background-position: center center;
         background-size: contain;
         z-index: -1;
-        @include mmd{
+        @include mmd {
             transform: translate(-50%, -48%);
         }
-        @include sm{
+        @include sm {
             transform: translate(-50%, -42%);
         }
     }
-    @include mmd{
+    @include mmd {
         padding-top: 130px;
         padding-bottom: 70px;
     }
-    & .section-title{
-        h2{
+    & .section-title {
+        h2 {
             text-transform: uppercase;
         }
     }
-    & .total_count{
+    & .total_count {
         padding-top: 25px;
         padding-bottom: 25px;
-        span{
+        span {
             font-family: 'MabryPro-Medium';
             @include font-24;
             color: $_black;
             margin-bottom: 12px;
             display: inline-block;
         }
-        h4{
+        h4 {
             @include font-32;
             font-family: 'MabryPro-Bold';
             line-height: 100%;
             color: $_black;
         }
     }
-    & .tokencharts-list{
+    & .tokencharts-list {
         margin-bottom: 50px;
-        ul{
+        ul {
             display: flex;
             gap: 16px;
             justify-content: center;
@@ -555,39 +557,39 @@
                 position: relative;
                 padding-left: 42px;
                 display: inline-block;
-                &::before{
+                &::before {
                     position: absolute;
                     content: "";
                     left: 12px;
                     top: 50%;
                     width: 24px;
                     height: 24px;
-                    background:#FF90E8;
+                    background: #FF90E8;
                     border-radius: 50%;
                     transform: translateY(-50%);
                 }
-                &:nth-child(2)::before{
-                    background:#FF7051;
+                &:nth-child(2)::before {
+                    background: #FF7051;
                 }
-                &:nth-child(3)::before{
-                    background:#23A094;
+                &:nth-child(3)::before {
+                    background: #23A094;
                 }
-                &:nth-child(4)::before{
-                    background:#F1F333;
+                &:nth-child(4)::before {
+                    background: #F1F333;
                 }
-                &:nth-child(5)::before{
-                    background:#FFC900;
+                &:nth-child(5)::before {
+                    background: #FFC900;
                 }
             }
         }
     }
-    & .tokenomics_top_shap{
+    & .tokenomics_top_shap {
         position: absolute;
         left: 0;
-        top: -20px;
+        top: 0px;
         width: 100%;
         height: auto;
-        & img{
+        & img {
             width: 100%;
         }
     }
@@ -596,40 +598,40 @@
         margin: 0 auto;
         position: relative;
         z-index: 1;
-        & .donut_m_img{
+        & .donut_m_img {
             max-width: 422px;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            @include sm{
+            @include sm {
                 max-width: 260px;
             }
-            @include ssm{
+            @include ssm {
                 max-width: 170px;
             }
         }
     }
 }
 
-.donut_bottom_area{
+.donut_bottom_area {
     justify-content: space-between;
     margin-top: 80px;
-    @include mmd{
+    @include mmd {
         margin-top: 40px;
         flex-direction: column-reverse !important;
     }
-    & .dbla{
+    & .dbla {
         position: relative;
         z-index: 1;
         max-width: 748px;
         height: 200px;
         padding: 29px 30px 90px 30px;
-        @include sm{
+        @include sm {
             padding: 29px 20px 90px 20px;
         }
-        &:before{
+        &:before {
             position: absolute;
             content: "";
             left: 0;
@@ -642,21 +644,19 @@
             background-size: 100% 100%;
             z-index: -1;
         }
-        
-        img{
+        img {
             position: absolute;
             z-index: 0;
             top: -37px;
             left: 0;
         }
-
     }
-    & .tokenomics_copyTxt{
+    & .tokenomics_copyTxt {
         position: relative;
         border-radius: 16px;
         border: 2px solid $_black;
-        background: $_white;
-        padding:24px 30px;
+        background: #05F2DB;
+        padding: 24px 30px;
         max-width: 473px;
         @include font-32;
         font-family: 'MabryPro-Medium';
@@ -664,21 +664,22 @@
         color: $_271423;
         display: flex;
         gap: 7px;
-        @include mmd{
-            margin:0 auto 50px;
+        @include mmd {
+            margin: 0 auto 50px;
         }
-        @include ssm{
-            padding:18px 22px
+        @include ssm {
+            padding: 18px 22px
         }
-        input{
+        input {
             font-family: 'MabryPro-Regular';
             padding: 0;
             border: 0;
-            width: calc(100% - 35px);
+            width: calc(100% - 200px);
             text-decoration: underline;
+            background: transparent;
         }
-        button{
-            background: #fff;
+        button {
+            background: transparent;
             border: 0;
             position: absolute;
             top: 50%;
@@ -686,48 +687,50 @@
             margin-top: 0px;
             transform: translateY(-50%);
             padding: 0 0px 0px 5px;
-            & img{
+            & img {
                 transition: all .3s ease-in-out;
-                &:hover{
+                &:hover {
                     opacity: .5;
                 }
             }
-            & .copyed{
+            & .copyed {
                 position: absolute;
                 top: -55px;
                 right: 5px;
                 font-size: 14px;
             }
-            @include ssm{
+            @include ssm {
                 right: 22px;
             }
         }
     }
 }
 
+
 /* ====================================== *
 *  ========== Momo Map CSS Start ======== *
 *  ====================================== */
-.momomap_area{
+
+.momomap_area {
     padding-top: 372px;
     padding-bottom: 100px;
-    background-color: #FFC900;
+    background-color: #05f2db;
     position: relative;
     z-index: 1;
-    & .section_M_title{
-        h2{
+    & .section_M_title {
+        h2 {
             text-align: left;
-           span{
-            display: block;
-            margin-left: 38%;
-            @include mmd{
-                display: inline-block;
-                margin-left: 0;
+            span {
+                display: block;
+                margin-left: 38%;
+                @include mmd {
+                    display: inline-block;
+                    margin-left: 0;
+                }
             }
-           } 
         }
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             bottom: 0;
@@ -735,62 +738,59 @@
             width: calc(100% - 16%);
             height: 1px;
             background: rgba(66, 82, 109, 0.50);
-            @include mmd{
+            @include mmd {
                 width: calc(96% - 0%);
                 left: 2%;
             }
         }
     }
-
-
-
-    @include lg{
+    @include lg {
         padding-top: 250px;
     }
-    @include mmd{
+    @include mmd {
         padding-top: 170px;
         padding-bottom: 80px;
     }
-    @include sm{
+    @include sm {
         padding-top: 170px;
         padding-bottom: 60px;
     }
-    @include ssm{
+    @include ssm {
         padding-top: 130px;
         padding-bottom: 60px;
     }
-    & .momo__map__services{
+    & .momo__map__services {
         padding-top: 66px;
         display: grid;
         justify-content: space-between;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-        @include lg{
+        @include lg {
             grid-template-columns: repeat(3, 1fr);
-            padding:0 2%;
+            padding: 0 2%;
             padding-top: 50px;
         }
-        @include mmd{
+        @include mmd {
             grid-template-columns: repeat(2, 1fr);
-            padding:0 3%;
+            padding: 0 3%;
             padding-top: 50px;
         }
-        @include sm{
+        @include sm {
             grid-template-columns: repeat(1, 1fr);
-            padding:0 10%;
+            padding: 0 10%;
             padding-top: 50px;
         }
-        @include ssm{
-            padding:0 3%;
+        @include ssm {
+            padding: 0 3%;
             padding-top: 50px;
         }
-        & .single_service_item{
+        & .single_service_item {
             position: relative;
             z-index: 1;
-            padding:32px 24px 102px;
+            padding: 32px 24px 102px;
             border-radius: 16px;
             border: 1px solid #281F00;
-            h3{
+            h3 {
                 @include font-32;
                 line-height: 150%;
                 color: $_060205;
@@ -798,10 +798,10 @@
                 padding-bottom: 16px;
                 margin-bottom: 16px;
                 display: block;
-                border-bottom:1px solid $_black;            
+                border-bottom: 1px solid $_black;
             }
-            ul{
-                li{
+            ul {
+                li {
                     position: relative;
                     padding-left: 35px;
                     margin-bottom: 16px;
@@ -809,7 +809,7 @@
                     font-family: 'MabryPro-Regular';
                     line-height: 150%;
                     color: $_271423;
-                    &::before{
+                    &::before {
                         position: absolute;
                         content: "";
                         top: 0px;
@@ -830,30 +830,30 @@
                 z-index: -1;
             }
         }
-        & .single_service_item:nth-child(1){
-            background: #23A094;
+        & .single_service_item:nth-child(1) {
+            background: #51ff71;
             box-shadow: 10px 10px 0px 0px #000;
         }
-        & .single_service_item:nth-child(2){
-            background: #FF7051;
+        & .single_service_item:nth-child(2) {
+            background: #ff7051;
             box-shadow: 10px 10px 0px 0px #000;
         }
-        & .single_service_item:nth-child(3){
+        & .single_service_item:nth-child(3) {
             background: #F1F333;
             box-shadow: 10px 10px 0px 0px #000;
         }
-        & .single_service_item:nth-child(4){
-            background: #FF90E8;
+        & .single_service_item:nth-child(4) {
+            background: #ffc900;
             box-shadow: 10px 10px 0px 0px #000;
         }
     }
-    & .momomap_top_shap{
+    & .momomap_top_shap {
         position: absolute;
         left: 0;
         top: -10px;
         width: 100%;
         height: auto;
-        & img{
+        & img {
             width: 100%;
         }
     }
@@ -865,13 +865,13 @@
         border-radius: 40px;
         background: #060205;
         height: 16px;
-        @include mmd{
+        @include mmd {
             margin-top: 50px;
         }
-        & li{
+        & li {
             width: 100%;
-            border-radius: 40px;
             height: 16px;
+            margin-left: -1px;
             & span {
                 text-align: center;
                 color: #fff;
@@ -886,96 +886,111 @@
                 margin: -15px auto;
                 z-index: 2;
             }
-            &:nth-child(1){
-                background: #FF90E8;
-
+            &:first-child {
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+            }
+            &:last-child {
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+            &:nth-child(1),
+            &.active {
+                background: #51ff71;
                 & span {
-                    background: #FF90E8;
+                    background: #51ff71;
                     box-shadow: 3px 3px 0px 0px #000;
                 }
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 & span {
                     background: #FF7051;
                 }
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 & span {
                     background: #D4D627;
                 }
             }
-            &:nth-child(4){
+            &:nth-child(4) {
                 & span {
                     border: 4px solid $_white;
                     background: #90A8ED;
                 }
             }
         }
-        
-        
     }
 }
+
 
 /* ====================================== *
 *  ========= Get Momo CSS Start ======= *
 *  ====================================== */
 
-.get_momo{
+.get_momo {
     padding-top: 350px;
     padding-bottom: 230px;
     position: relative;
     z-index: 1;
-    background-color: #FF90E8;
+    background-color: $_bgcolor;
     background-image: url('../img/get-momo-bg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    & .get_momo_top_shap{
+    & .get_momo_top_shap {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 320px;
-        & img{
+        & img {
             width: 100%;
         }
     }
-
-    @include lg{
+    @include lg {
         padding-top: 250px;
         padding-bottom: 220px;
     }
-    @include mmd{
+    @include mmd {
         padding-top: 220px;
         padding-bottom: 150px;
     }
-    @include sm{
+    @include sm {
         padding-top: 120px;
         padding-bottom: 60px;
     }
-
-    & .section__title{
-        max-width: 858px;
+    & .section__title {
         margin: 0 auto 70px;
         position: relative;
         z-index: 9;
-        @include sm{
+        @include sm {
             margin: 0 auto 40px;
         }
-        & h2{
+        & h2 {
+            color: $_white;
+            font-size: 65px;
             text-transform: uppercase !important;
             letter-spacing: 2.48px;
             line-height: 1.2em;
             margin-bottom: 48px;
-            @include sm{
+            @include lg {
+                font-size: 50px;
+            }
+            @include md {
+                font-size: 44px;
+            }
+            @include sm {
+                font-size: 40px;
+            }
+            @include sm {
                 margin-bottom: 30px;
             }
         }
     }
-    & .boxed_btn{
+    & .boxed_btn {
         border-radius: 90px;
         border: 1px solid #000;
-        background: $_FFC900;
+        background: $_white;
         box-shadow: 5px 5px 0px 0px #000;
         color: $_black;
         @include font-20;
@@ -987,22 +1002,22 @@
         display: inline-block;
         margin-bottom: 27px;
         transition: all .3s ease-in-out;
-        &:hover{
+        &:hover {
             color: $_FFC900;
             background: $_black;
             box-shadow: 5px 5px 0px 0px $_FFC900;
         }
-        @include mmd{
+        @include mmd {
             min-width: 400px;
         }
-        @include sm{
+        @include sm {
             min-width: 300px;
             padding: 30px;
         }
     }
     & .social__icons {
         display: block;
-        a{
+        a {
             border-radius: 50%;
             border: 1px solid #000;
             background: $_white;
@@ -1013,19 +1028,17 @@
             width: 80px;
             margin-right: 16px;
             display: inline-block;
-            &:hover{
+            &:hover {
                 transform: translateY(-15px);
             }
-            @include mmd{
+            @include mmd {
                 margin-top: 20px;
                 height: 50px;
                 width: 50px;
                 line-height: 15px;
                 padding: 12px;
                 display: inline-flex;
-
             }
         }
     }
 }
-

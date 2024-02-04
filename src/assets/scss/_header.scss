@@ -9,7 +9,7 @@
         padding: 10px;
     }
     @include mmd {
-        background-color: #FF8FE6;
+        background-color: $_bgcolor;
         .navbar-toggler {
             // background: $primary;
             padding: 6px;
@@ -28,14 +28,14 @@
             display: inherit;
         }
     }
-    & .navbar-brand{
+    & .navbar-brand {
         max-width: 164px;
         display: inline-block;
-        @include sm{
+        @include sm {
             max-width: 130px;
         }
     }
-    & .boxed__btn{
+    & .boxed__btn {
         font-family: 'MabryPro-Medium';
         display: inline-block;
         border-radius: 80px;
@@ -45,28 +45,29 @@
         color: $_060205;
         @include font-20;
         font-weight: 700;
-        line-height: 120%; /* 24px */
+        line-height: 120%;
+        /* 24px */
         padding: 14px 24px !important;
         transition: all .3s ease-in-out;
-        &:hover{
+        &:hover {
             background: $_black;
             color: $_white;
             box-shadow: 5px 5px 0px 0px $_white;
         }
-        @include lg{
+        @include lg {
             margin-bottom: 16px;
         }
     }
-    .header_socials{
+    .header_socials {
         margin-right: 8px;
-        li{
+        li {
             border-radius: 56px;
-            border: 1px solid $_black;   
+            border: 1px solid $_black;
             display: inline-block;
             align-items: center;
             margin-right: 8px;
             transition: all .3s ease-in-out;
-            a{
+            a {
                 width: 48px;
                 height: 48px;
                 margin: 4px;
@@ -77,67 +78,64 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img{
+                img {
                     width: 22px;
                 }
             }
-            &:hover{
+            &:hover {
                 border: 1px solid $_white;
-                    
             }
         }
-        @include mmd{
-            margin:15px 0;
+        @include mmd {
+            margin: 15px 0;
         }
-        
     }
 }
 
 .navbar-nav {
     border-radius: 56px;
-    border: 1px solid #060205;
+    border: 1px solid #ECE4EA;
     padding: 8px;
     gap: 16px;
     & a {
         display: block;
-        color: $_271423;
+        color: #ECE4EA !important;
         @include font-20;
-        padding:10px 12px;
+        padding: 10px 12px;
         cursor: pointer;
         border-radius: 56px;
         &:hover,
         &.active,
         &:focus {
-            color: $_white !important;
-            background: $_060205;
+            color: $heading !important;
+            background: $_white;
         }
-        @include mmd{
+        @include mmd {
             border-radius: 10px;
         }
     }
-    @include mmd{
+    @include mmd {
         border-radius: 10px;
     }
-    
 }
 
-.heading.fixed{
+.heading.fixed {
     position: fixed;
-    background-color: #FF8FE6;
+    background-color: $_bgcolor;
     padding: 10px 0;
     transition: all .3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    @include lg{
+    @include lg {
         padding: 0;
     }
-    @include mmd{
+    @include mmd {
         padding: 0;
     }
 }
 
-@media(max-width:1280px){
-    .heading{
-        background-color: #FF8FE6;
+@media(max-width:1280px) {
+    .heading {
+        background-color: $_bgcolor;
     }
     .navbar-nav {
         margin-top: 15px;
@@ -146,7 +144,7 @@
             border-radius: 10px;
         }
     }
-    .header_socials{
-        margin:15px 0;
+    .header_socials {
+        margin: 15px 0;
     }
 }

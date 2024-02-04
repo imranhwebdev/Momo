@@ -1,53 +1,48 @@
-html, html body{
+html,
+html body {
     overflow-x: hidden;
 }
 
-  @font-face {
+@font-face {
     font-family: 'MabryPro-Light';
-    src: url('../fonts/MabryPro-Light.woff2') format('woff2'),
-        url('../fonts/MabryPro-Light.woff') format('woff'),
-        url('../fonts/MabryPro-Light.ttf') format('truetype');
-    font-weight: 300; /* Regular */
-  }
-  
-  @font-face {
+    src: url('../fonts/MabryPro-Light.woff2') format('woff2'), url('../fonts/MabryPro-Light.woff') format('woff'), url('../fonts/MabryPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    /* Regular */
+}
+
+@font-face {
     font-family: 'MabryPro-Regular';
-    src: url('../fonts/MabryPro-Regular.woff2') format('woff2'),
-        url('../fonts/MabryPro-Regular.woff') format('woff'),
-        url('../fonts/MabryPro-Regular.ttf') format('truetype');
-    font-weight: 400; /* Regular */
-  }
+    src: url('../fonts/MabryPro-Regular.woff2') format('woff2'), url('../fonts/MabryPro-Regular.woff') format('woff'), url('../fonts/MabryPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    /* Regular */
+}
 
-  @font-face {
+@font-face {
     font-family: 'MabryPro-Medium';
-    src: url('../fonts/MabryPro-Medium.woff2') format('woff2'),
-        url('../fonts/MabryPro-Medium.woff') format('woff'),
-        url('../fonts/MabryPro-Medium.ttf') format('truetype');
-    font-weight: 500; /* Medium */
-  }
+    src: url('../fonts/MabryPro-Medium.woff2') format('woff2'), url('../fonts/MabryPro-Medium.woff') format('woff'), url('../fonts/MabryPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    /* Medium */
+}
 
-
-  @font-face {
+@font-face {
     font-family: 'MabryPro-Bold';
-    src: url('../fonts/MabryPro-Bold.woff2') format('woff2'),
-        url('../fonts/MabryPro-Bold.woff') format('woff'),
-        url('../fonts/MabryPro-Bold.ttf') format('truetype');
-    font-weight: 700; /* Bold */
-  }
+    src: url('../fonts/MabryPro-Bold.woff2') format('woff2'), url('../fonts/MabryPro-Bold.woff') format('woff'), url('../fonts/MabryPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /* Bold */
+}
 
-  @font-face {
+@font-face {
     font-family: 'MabryPro-Black';
-    src: url('../fonts/MabryPro-Black.woff2') format('woff2'),
-        url('../fonts/MabryPro-Black.woff') format('woff'),
-        url('../fonts/MabryPro-Black.ttf') format('truetype');
-    font-weight: 900; /* Bold */
-  }
+    src: url('../fonts/MabryPro-Black.woff2') format('woff2'), url('../fonts/MabryPro-Black.woff') format('woff'), url('../fonts/MabryPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    /* Bold */
+}
 
-  @font-face {
+@font-face {
     font-family: 'TuskerGrotesk';
     src: url('../fonts/tusker-grotesk-font/TuskerGrotesk-5600Semibold.ttf') format('truetype');
-  }
-  
+}
+
 body {
     font-family: 'MabryPro-Regular';
     @include font-20;
@@ -64,16 +59,21 @@ h5,
 h6 {
     font-family: 'TuskerGrotesk';
     font-weight: bold;
-};
-
-h1{
-    @include font-124;
-    line-height: 1.4
 }
-h2{
+
+;
+h1 {
+    @include font-124;
+    line-height: 1.4;
+    color: $heading;
+}
+
+h2 {
     @include font-124;
     line-height: 110%;
+    color: $heading;
 }
+
 // h3{
 //     @include font-40;
 // }
@@ -91,9 +91,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-figure{
+
+figure {
     margin-bottom: 0;
 }
+
 ul,
 ol {
     list-style: none;
@@ -114,13 +116,15 @@ button {
     outline: none;
     @include transition;
 }
-.copytoclipboard{
-    @include ssm{
-        & img{
+
+.copytoclipboard {
+    @include ssm {
+        & img {
             max-width: 20px;
         }
     }
 }
+
 input:focus,
 textarea:focus,
 button:focus {
@@ -146,12 +150,12 @@ input::-webkit-inner-spin-button {
 // input[type=number] {
 //     -moz-appearance: textfield;
 // }
-
 .container {
     max-width: 1528px;
 }
 
-.boxed__btn, .inline__btn {
+.boxed__btn,
+.inline__btn {
     font-family: 'Satoshi-Medium';
     display: inline-block;
     border: 1.5px solid transparent;
@@ -170,14 +174,13 @@ input::-webkit-inner-spin-button {
         // border: 1.5px solid $primary;
         box-shadow: 1px 0px 10px 0px #15B887;
     }
-
 }
 
-.section__title{
-    & h2{
+.section__title {
+    & h2 {
         margin-bottom: 28px;
     }
-    & p{
+    & p {
         // @include font-25;
         opacity: 0.78;
         font-weight: 400;
