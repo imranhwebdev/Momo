@@ -9,7 +9,7 @@ import socialIcon5 from '../assets/img/social-icon5.svg';
 import getMomoTopShap from '../assets/img/get-momo-top-shap.png';
 
 export default function GetMomo() {
-    const Momo_btn = "GET MOMO";
+    const Momo_btn = "GET NONO";
     const Momo_btn_link = "https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in";
     const buttonData = [
         {
@@ -37,7 +37,7 @@ export default function GetMomo() {
     return (
         <div className="get_momo" id='getmomo'>
             <figure className='get_momo_top_shap'>
-                <img src={getMomoTopShap} alt="get momo top shap" />
+                <img src={getMomoTopShap} alt="get nono top shap" />
             </figure>
             <Container>
             <Row className='justify-content-center text-center'>

@@ -39,7 +39,6 @@ export default function Header(){
                         <Link to="home" spy={true} smooth={true}  offset={fix ? -70 : -50} duration={500}>Home</Link>
                         <Link to="about" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>About</Link>
                         <Link to="howtobuy" spy={true} smooth={true} offset={fix ? -70 : -50} duration={500}>How to buy</Link>
-                        <Link to="bridge" spy={true} smooth={true}  offset={fix ? -90 : -70} duration={500}>Bridge</Link>
                         <Link to="tokenomics" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Tokenomics</Link>
                         <Link to="momomap" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Nonomap</Link>
                     </Nav>
@@ -51,7 +50,7 @@ export default function Header(){
                                 <a href="https://twitter.com/TokenMomo" target='_blank'><img src={socialLogo2} alt="twitter" /></a>
                             </li>
                         </ul>
-                        <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" target='_blank' className='boxed__btn'>GET MOMO</a>
+                        <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" target='_blank' className='boxed__btn'>GET NONO</a>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
