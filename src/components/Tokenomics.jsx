@@ -6,12 +6,12 @@ import tokenomics_donut_m_img from '../assets/img/donut_middle_img.png';
 import tokenomics_donut_star from '../assets/img/donut_star.png';
 import copyTxt from '../assets/img/copy.png';
 const Tokenomics = () => {
-    const donutCommentTxt = "LP tokens are burnt, and contract ownership is renounced. The team's tokens will locked until January 1, 2028";
+    // const donutCommentTxt = "LP tokens are burnt, and contract ownership is renounced. The team's tokens will locked until January 1, 2028";
     const [Area, setArea] = useState({
-        series: [25, 20, 25, 20, 10],
+        series: [25, 20, 25, 20],
         options: {
-            colors: ['#FF90E8', '#FF7051', '#23A094', '#F1F333', '#FFC900'],
-            labels: ['Early Investor - ', 'Liquidity - ', 'Marketing - ', 'Airdrop - ', 'Team\'s tokens - '],
+            colors: ['#50ff96', '#ff7051', '#05f2db', '#F1F333'],
+            labels: ['Early Investor - ', 'Liquidity - ', 'Marketing - ', 'Airdrop - '],
             fill: {
               opacity: 1
             },
@@ -84,7 +84,7 @@ const Tokenomics = () => {
 
      // Calculate total percentage
     //  const totalPercentage = Area.series.reduce((a, b) => a + b);
-    const [textToCopy, setTextToCopy] = useState('2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4');
+    const [textToCopy, setTextToCopy] = useState('0xfaa.....cd36');
     const [isCopied, setIsCopied] = useState(false);
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText(textToCopy)
@@ -111,7 +111,7 @@ const Tokenomics = () => {
                               <div className="total_count text-center">
                                  {/* {Math.round(totalPercentage) + "%"} */}
                                  <span>Token total supply</span>
-                                 <h4>2,099,991,041,457.75</h4>
+                                 <h4>1,000,000,000,000,000</h4>
                               </div>
                                 <div className="tokencharts-list">
                                     <ul className='text-center'>
@@ -141,7 +141,7 @@ const Tokenomics = () => {
                               <div className="donut_bottom_area d-flex align-items-start">
                                   <div className="dbla">
                                     <img src={tokenomics_donut_star} alt="" />
-                                    <p>{donutCommentTxt}</p>
+                                    <p>Early Investor's Tokens are locked with a 5-year vesting period. <span className='fw-semibold d-block'> LP tokens are locked up until 2046 in UNCX.</span></p>
                                   </div>
                                   <div className="tokenomics_copyTxt copytoclipboard">
                                     Contract: <input readOnly type="text"  value={textToCopy}

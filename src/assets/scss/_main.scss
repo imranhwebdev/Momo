@@ -122,11 +122,11 @@
         right: 0%;
         z-index: -1;
         @include xxxl {
-            top: 2%;
+            top: -7%;
             right: 2%;
         }
         @include lg {
-            top: 2%;
+            top: -7%;
             right: -20%;
         }
         @include mmd {
@@ -176,6 +176,7 @@
                 width: calc(100% - 40px);
                 padding: 0;
                 @include font-20;
+                text-decoration: underline;
             }
             & button {
                 background: transparent;
@@ -209,7 +210,7 @@
             }
             span {
                 font-size: 29px;
-                font-weight: 500;
+                font-weight: 600;
                 color: $_060205;
                 margin-top: -7px;
                 @include mmd {
@@ -265,7 +266,7 @@
         border-radius: 24px;
         border: 1px solid #000;
         box-shadow: 8px 10px 0px 0px #000;
-        background-color: $_FFC900;
+        background-color: #66bcf2;
         padding: 65px 50px;
         z-index: 1;
         overflow: hidden;
@@ -345,6 +346,9 @@
                 left: 2%;
             }
         }
+        & p {
+            font-family: "MabryPro-Medium";
+        }
     }
     & .howtobuy_top_shap {
         position: absolute;
@@ -389,6 +393,13 @@
                 p {
                     font-family: 'MabryPro-Medium';
                     @include font-16;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-clamp: 10;
+                    -webkit-line-clamp: 10;
+                    box-orient: vertical;
+                    -webkit-box-orient: vertical;
                 }
             }
             & span {
@@ -650,6 +661,9 @@
             top: -37px;
             left: 0;
         }
+        & p {
+            font-family: "MabryPro-Medium";
+        }
     }
     & .tokenomics_copyTxt {
         position: relative;
@@ -660,7 +674,6 @@
         max-width: 473px;
         @include font-32;
         font-family: 'MabryPro-Medium';
-        text-decoration: underline;
         color: $_271423;
         display: flex;
         gap: 7px;
@@ -671,6 +684,7 @@
             padding: 18px 22px
         }
         input {
+            text-decoration: underline;
             font-family: 'MabryPro-Regular';
             padding: 0;
             border: 0;
@@ -737,7 +751,7 @@
             right: 0;
             width: calc(100% - 16%);
             height: 1px;
-            background: rgba(66, 82, 109, 0.50);
+            background: $heading;
             @include mmd {
                 width: calc(96% - 0%);
                 left: 2%;
@@ -808,7 +822,7 @@
                     @include font-16;
                     font-family: 'MabryPro-Regular';
                     line-height: 150%;
-                    color: $_271423;
+                    color: $heading;
                     &::before {
                         position: absolute;
                         content: "";
@@ -818,7 +832,7 @@
                         height: 18.92px;
                         border-radius: 56px;
                         border: 1px solid $_060205;
-                        background: $_FFC900;
+                        background: #ffc900;
                         box-shadow: 1px -1px 0px 0px $_black;
                     }
                 }

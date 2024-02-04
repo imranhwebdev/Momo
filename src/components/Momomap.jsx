@@ -3,48 +3,64 @@ import { Col, Container, Row } from 'react-bootstrap';
 import exploreImg from "../assets/img/explore_more.png";
 import momomapImg from "../assets/img/momomap.png";
 
-export default function MomoMap(){
-    const title = "MOMO <span>MAP</span>";
-    const desc = "Unveiling the Future of $Momo: Embark on this exciting journey with us as we navigate the ever-evolving crypto landscape. Explore the $Momo Coin Roadmap, and together, let's aim for the potential of 1,000X returns.";
+export default function MomoMap() {
+    const title = "NONO <span>MAP</span>";
+    const desc = "Unveiling the Future of $Nono: Embark on this exciting journey with us as we navigate the ever-evolving crypto landscape. Explore the $Nono Coin Roadmap, and together, let's aim for the potential of 1,000X returns.";
     const services = [
-        { 
-            title: 'Phase 1', 
+        {
+            title: 'Phase 1',
             items: [
                 "Launch",
                 "Security Audits",
                 "Coinmarketcap & Coingekco Listings",
-                "Making $Momo Trending on Social Media",
-                "50,000+Holders",
-            ]
+                "Making $Nono Trending on Social Media",
+                "20,000+Holders",
+            ],
+            icon: `<svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M88.6814 42.7298L113.364 27.6154L102.765 54.5473L100.925 59.2236L105.895 59.968L134.518 64.2552L109.087 78.0735L104.672 80.4728L108 84.2377L127.171 105.92L98.8078 100.159L93.883 99.1591L94.0129 104.183L94.7612 133.115L76.7368 110.471L73.6072 106.539L70.4776 110.471L52.4532 133.115L53.2015 104.183L53.3314 99.1591L48.4066 100.159L20.0434 105.92L39.2142 84.2377L42.5428 80.4728L38.1273 78.0735L12.6967 64.2552L41.3198 59.968L46.2897 59.2236L44.4494 54.5473L33.8507 27.6154L58.533 42.7298L62.8186 45.3541L64.4148 40.589L73.6072 13.1453L82.7996 40.589L84.3957 45.3541L88.6814 42.7298Z" fill="#FF7051" stroke="#05F2DB" stroke-width="8"/>
+            </svg>
+            `
         },
-        { 
-            title: 'Phase 2', 
+        {
+            title: 'Phase 2',
             items: [
-                "$Momo Ecosystem Development",
+                "$Nono Ecosystem Development",
                 "Market Expansion",
                 "Community Governance",
-                "100,000+Holder",
-            ]
+                "50,000+Holder",
+            ],
+            icon: `<svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M88.6814 42.7298L113.364 27.6154L102.765 54.5473L100.925 59.2236L105.895 59.968L134.518 64.2552L109.087 78.0735L104.672 80.4728L108 84.2377L127.171 105.92L98.8078 100.159L93.883 99.1591L94.0129 104.183L94.7612 133.115L76.7368 110.471L73.6072 106.539L70.4776 110.471L52.4532 133.115L53.2015 104.183L53.3314 99.1591L48.4066 100.159L20.0434 105.92L39.2142 84.2377L42.5428 80.4728L38.1273 78.0735L12.6967 64.2552L41.3198 59.968L46.2897 59.2236L44.4494 54.5473L33.8507 27.6154L58.533 42.7298L62.8186 45.3541L64.4148 40.589L73.6072 13.1453L82.7996 40.589L84.3957 45.3541L88.6814 42.7298Z" fill="#50FF96" stroke="#05F2DB" stroke-width="8"/>
+            </svg>
+            `
         },
-        { 
-            title: 'Phase 3', 
+        {
+            title: 'Phase 3',
             items: [
-                "Momo MPC Wallet Launch",
-                "Propelling $Momo to Go Viral on Social",
+                "Nono MPC Wallet Launch",
+                "Propelling $Nono to Go Viral on Social",
                 "T2 exchange Listings",
                 "200,000+Holders",
-            ]
+            ],
+            icon: `<svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M88.6814 42.7298L113.364 27.6154L102.765 54.5473L100.925 59.2236L105.895 59.968L134.518 64.2552L109.087 78.0735L104.672 80.4728L108 84.2377L127.171 105.92L98.8078 100.159L93.883 99.1591L94.0129 104.183L94.7612 133.115L76.7368 110.471L73.6072 106.539L70.4776 110.471L52.4532 133.115L53.2015 104.183L53.3314 99.1591L48.4066 100.159L20.0434 105.92L39.2142 84.2377L42.5428 80.4728L38.1273 78.0735L12.6967 64.2552L41.3198 59.968L46.2897 59.2236L44.4494 54.5473L33.8507 27.6154L58.533 42.7298L62.8186 45.3541L64.4148 40.589L73.6072 13.1453L82.7996 40.589L84.3957 45.3541L88.6814 42.7298Z" fill="#FF7051" stroke="#6B6C42" stroke-width="8"/>
+            </svg>
+            `
         },
-        { 
-            title: 'Phase 4', 
+        {
+            title: 'Phase 4',
             items: [
-                "Momochain Launch",
+                "Nonochain Launch",
                 "Becoming a Market Hotspot",
                 "T1 exchange Listings",
                 "500,000+Holders",
-            ]
+            ],
+            icon: `<svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2" d="M88.6814 42.7298L113.364 27.6154L102.765 54.5473L100.925 59.2236L105.895 59.968L134.518 64.2552L109.087 78.0735L104.672 80.4728L108 84.2377L127.171 105.92L98.8078 100.159L93.883 99.1591L94.0129 104.183L94.7612 133.115L76.7368 110.471L73.6072 106.539L70.4776 110.471L52.4532 133.115L53.2015 104.183L53.3314 99.1591L48.4066 100.159L20.0434 105.92L39.2142 84.2377L42.5428 80.4728L38.1273 78.0735L12.6967 64.2552L41.3198 59.968L46.2897 59.2236L44.4494 54.5473L33.8507 27.6154L58.533 42.7298L62.8186 45.3541L64.4148 40.589L73.6072 13.1453L82.7996 40.589L84.3957 45.3541L88.6814 42.7298Z" fill="#FAFBFB" stroke="#DB79C7" stroke-width="8"/>
+            </svg>
+            `
         },
-      ];
+    ];
 
 
     return (
@@ -83,11 +99,7 @@ export default function MomoMap(){
                                             <li key={itemIndex}>{item}</li>
                                         ))}
                                     </ul>
-                                    <figure className='star_shap'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="88" viewBox="0 0 72 88" fill="none">
-                                            <path opacity="0.2" d="M88.6814 42.2561L113.364 27.1418L102.765 54.0737L100.925 58.75L105.895 59.4944L134.518 63.7816L109.087 77.5999L104.672 79.9992L108 83.7641L127.171 105.447L98.8078 99.6858L93.883 98.6855L94.0129 103.709L94.7612 132.642L76.7368 109.997L73.6072 106.065L70.4776 109.997L52.4532 132.642L53.2015 103.709L53.3314 98.6855L48.4066 99.6858L20.0434 105.447L39.2142 83.7641L42.5428 79.9992L38.1273 77.5999L12.6967 63.7816L41.3198 59.4944L46.2897 58.75L44.4494 54.0737L33.8507 27.1418L58.533 42.2561L62.8186 44.8805L64.4148 40.1153L73.6072 12.6716L82.7996 40.1153L84.3957 44.8805L88.6814 42.2561Z" fill="#FF7051" stroke="#2FB5A8" strokeWidth="8"/>
-                                        </svg>
-                                    </figure>
+                                    <figure className='star_shap' dangerouslySetInnerHTML={{__html:service.icon}}></figure>
                                 </div>
                             ))}
                         </div>

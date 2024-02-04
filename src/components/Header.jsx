@@ -41,7 +41,7 @@ export default function Header(){
                         <Link to="howtobuy" spy={true} smooth={true} offset={fix ? -70 : -50} duration={500}>How to buy</Link>
                         <Link to="bridge" spy={true} smooth={true}  offset={fix ? -90 : -70} duration={500}>Bridge</Link>
                         <Link to="tokenomics" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Tokenomics</Link>
-                        <Link to="momomap" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Momomap</Link>
+                        <Link to="momomap" spy={true} smooth={true}  offset={fix ? -70 : -70} duration={500}>Nonomap</Link>
                     </Nav>
                         <ul className='header_socials'>
                             <li>

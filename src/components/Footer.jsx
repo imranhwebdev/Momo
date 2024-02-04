@@ -28,7 +28,7 @@ export default function Footer() {
             menuLink: '#home',
         },
         {
-            menuItem: 'Momomap',
+            menuItem: 'Nonomap',
             menuLink: '#momomap',
         },
         {
@@ -68,9 +68,9 @@ export default function Footer() {
         // Add more buttons as needed
     ];
 
-    // const footerMiddleContent = "$momo coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize.$MOMO is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.";
+    // const footerMiddleContent = "$nono coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize.$MOMO is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.";
     const currentYear = new Date().getFullYear();
-    const copyrightText = `Copyright © ${currentYear} Official MoMo Token`;
+    const copyrightText = `Copyright © ${currentYear} Official NoNo Token`;
     return (
         <div className="footer_area">
             <Container>
