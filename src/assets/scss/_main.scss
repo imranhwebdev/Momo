@@ -67,12 +67,13 @@
                     right: -105px;
                     width: 150px;
                     height: 80px;
+                    letter-spacing: 1.1px;
                 }
                 @include ssm {
-                    top: -36px;
+                    top: -64px;
                     right: -60px;
-                    width: 130px;
-                    height: 60px;
+                    width: 145px;
+                    height: 93px;
                 }
             }
         }
@@ -370,12 +371,19 @@
         @include mmd {
             padding-top: 50px;
         }
+        @include sm{
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+
+        }
         & .single__service_item {
             position: relative;
             padding: 40px 24px 0px 24px;
             border-radius: 16px;
             padding-bottom: 180px;
             display: inline-block;
+            @include sm{
+                margin-bottom: 15px;
+            }
             .htb_s_l {
                 position: absolute;
                 right: 40px;

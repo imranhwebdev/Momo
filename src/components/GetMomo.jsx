@@ -21,10 +21,6 @@ export default function GetMomo() {
             link: 'https://twitter.com/nonobsc'
         }, 
         {
-            socialIcon: socialIcon3,
-            link: 'https://solana.com/'
-        },
-        {
             socialIcon: socialIcon4,
             link: 'https://bscscan.com/address/0xfaab404d00c4c4dacce9475baec16c945292cd36'
         },

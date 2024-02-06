@@ -50,14 +50,6 @@ export default function Footer() {
             link: 'https://twitter.com/nonobsc'
         },
         {
-            Icon: socialIcon3,
-            link: 'https://www.linkedin.com/company/tokenmom'
-        },
-        {
-            Icon: socialIcon4,
-            link: 'https://solana.com/'
-        },
-        {
             Icon: socialIcon5,
             link: 'https://bscscan.com/address/0xfaab404d00c4c4dacce9475baec16c945292cd36'
         },
