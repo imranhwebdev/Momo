@@ -578,7 +578,7 @@
                     top: 50%;
                     width: 24px;
                     height: 24px;
-                    background: #FF90E8;
+                    background: #50FF96;
                     border-radius: 50%;
                     transform: translateY(-50%);
                 }
@@ -586,7 +586,7 @@
                     background: #FF7051;
                 }
                 &:nth-child(3)::before {
-                    background: #23A094;
+                    background: #05F2DB;
                 }
                 &:nth-child(4)::before {
                     background: #F1F333;
@@ -671,6 +671,12 @@
         }
         & p {
             font-family: "MabryPro-Medium";
+            @include ssm{
+                span{
+                    display: inline !important;
+                }
+
+            }
         }
     }
     & .tokenomics_copyTxt {
@@ -947,6 +953,7 @@
 .section_right_txt_w_img{
     font-size: 24px;
     font-weight: 500;
+    font-family: "MabryPro-Medium";
     @include sm{
         font-size: 20px;
     }
