@@ -43,11 +43,11 @@ export default function Footer() {
     const socialIcons = [
         {
             Icon: socialIcon1,
-            link: 'https://t.me/momotoken2100'
+            link: 'https://t.me/nonoholder'
         },
         {
             Icon: socialIcon2,
-            link: 'https://twitter.com/TokenMomo'
+            link: 'https://twitter.com/nonobsc'
         },
         {
             Icon: socialIcon3,
@@ -59,11 +59,11 @@ export default function Footer() {
         },
         {
             Icon: socialIcon5,
-            link: 'https://solscan.io/token/2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4'
+            link: 'https://bscscan.com/address/0xfaab404d00c4c4dacce9475baec16c945292cd36'
         },
         {
             Icon: socialIcon6,
-            link: 'https://www.geckoterminal.com/solana/pools/HY2VkFmtLsQKkSCiLNGv7y4EV9rretjWdu97QBMs2uFW'
+            link: 'https://www.dextools.io/app/cn/bnb/pair-explorer/0x9ee58767a5e33086b47964690a6ae3e4617d8bb6?t=1707206681671'
         },
         // Add more buttons as needed
     ];
