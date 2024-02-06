@@ -81,7 +81,7 @@ export default function HowToBuy(){
                     </Col>
                     <Col lg={6}>
                         <div className="htb_right">
-                            <iframe src="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" frameBorder="0"></iframe>
+                            <iframe src="https://pancakeswap.finance/swap" frameBorder="0"></iframe>
                         </div>
                     </Col>
                 </Row>
