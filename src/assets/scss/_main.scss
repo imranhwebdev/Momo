@@ -175,11 +175,14 @@
                 border: 0;
                 width: calc(100% - 40px);
                 padding: 0;
-                @include font-20;
+                font-size: 22px;
                 text-decoration: underline;
+                @include sm{
+                    font-size: 20px;
+                }
             }
             & button {
-                background: transparent;
+                background: #fff;
                 padding: 0 8px !important;
                 display: inline-block;
                 border: 0;
@@ -212,7 +215,7 @@
                 font-size: 29px;
                 font-weight: 600;
                 color: $_060205;
-                margin-top: -7px;
+                margin-top: -3px;
                 @include mmd {
                     font-size: 20px;
                     margin-top: 0px;
@@ -625,7 +628,9 @@
         }
     }
 }
-
+.mr-1{
+    margin-right: 5px;
+}
 .donut_bottom_area {
     justify-content: space-between;
     margin-top: 80px;
@@ -639,6 +644,9 @@
         max-width: 748px;
         height: 200px;
         padding: 29px 30px 90px 30px;
+        @include mmd{
+            margin: 0 auto;
+        }
         @include sm {
             padding: 29px 20px 90px 20px;
         }
@@ -679,6 +687,7 @@
         gap: 7px;
         @include mmd {
             margin: 0 auto 50px;
+            width: 100%;
         }
         @include ssm {
             padding: 18px 22px
@@ -688,12 +697,12 @@
             font-family: 'MabryPro-Regular';
             padding: 0;
             border: 0;
-            width: calc(100% - 200px);
+            width: 100%;
             text-decoration: underline;
             background: transparent;
         }
         button {
-            background: transparent;
+            background: #05F2DB;
             border: 0;
             position: absolute;
             top: 50%;
@@ -935,7 +944,13 @@
         }
     }
 }
-
+.section_right_txt_w_img{
+    font-size: 24px;
+    font-weight: 500;
+    @include sm{
+        font-size: 20px;
+    }
+}
 
 /* ====================================== *
 *  ========= Get Momo CSS Start ======= *
@@ -947,10 +962,10 @@
     position: relative;
     z-index: 1;
     background-color: $_bgcolor;
-    background-image: url('../img/get-momo-bg.png');
+    background-image: url('../img/get-momo-bg.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: 70%;
     & .get_momo_top_shap {
         position: absolute;
         top: 0;
@@ -1017,16 +1032,16 @@
         margin-bottom: 27px;
         transition: all .3s ease-in-out;
         &:hover {
-            color: $_FFC900;
+            color: $_white;
             background: $_black;
-            box-shadow: 5px 5px 0px 0px $_FFC900;
+            box-shadow: 5px 5px 0px 0px $_white;
         }
         @include mmd {
             min-width: 400px;
         }
         @include sm {
             min-width: 300px;
-            padding: 30px;
+            padding:22px 30px;
         }
     }
     & .social__icons {
@@ -1036,7 +1051,7 @@
             border: 1px solid #000;
             background: $_white;
             box-shadow: 3px 3px 0px 0px #000;
-            line-height: 70px;
+            line-height: 75px;
             text-align: center;
             height: 80px;
             width: 80px;

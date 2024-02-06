@@ -12,7 +12,7 @@ export default function HowToBuy(){
     const desc = "Ready to own some Nono tokens? Follow these straightforward steps to purchase your Nono tokens and join the Nono community";
     const htbServices = [
         { 
-            sl: '01', 
+            sl: '01.', 
             title: "Set Up Your Wallet",
             desc: "Download Metamask or your preferred Bsc wallet for free from the App Store or Google Play Store. If you're using a desktop, get the Google Chrome extension by visiting metamask.io",
             logo: htbSL1,

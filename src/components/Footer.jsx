@@ -109,11 +109,6 @@ export default function Footer() {
                         </div>
 
                     </Col>
-                    {/* <Col sm={12}>
-                        <div className="footer__middle__content text-center">
-                            <p>{footerMiddleContent}</p>
-                        </div>
-                    </Col> */}
 
                     <Col sm={12} className='text-center pt-3'>
                         <div className="footer__social">

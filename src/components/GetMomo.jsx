@@ -26,7 +26,7 @@ export default function GetMomo() {
         },
         {
             socialIcon: socialIcon4,
-            link: 'https://solscan.io/token/2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4'
+            link: 'https://bscscan.com/'
         },
         {
             socialIcon: socialIcon5,

@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import exploreImg from "../assets/img/explore_more.png";
 import momomapImg from "../assets/img/momomap.png";
+import checkImg from "../assets/img/check.svg";
 
 export default function MomoMap() {
     const title = "NONO <span>MAP</span>";
@@ -84,7 +85,7 @@ export default function MomoMap() {
                     <Col>
                         <div className="momo_map_timeline">
                             <ul className='momo_map_t_number'>
-                                <li><span>1</span></li>
+                                <li><span><img src={checkImg} alt="" /></span></li>
                                 <li><span>2</span></li>
                                 <li><span>3</span></li>
                                 <li><span>4</span></li>

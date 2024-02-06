@@ -84,7 +84,7 @@ const Tokenomics = () => {
 
      // Calculate total percentage
     //  const totalPercentage = Area.series.reduce((a, b) => a + b);
-    const [textToCopy, setTextToCopy] = useState('0xfaa.....cd36');
+    const [textToCopy, setTextToCopy] = useState('0xfaab404d00c4c4dacce9475baec16c945292cd36');
     const [isCopied, setIsCopied] = useState(false);
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText(textToCopy)
@@ -121,8 +121,8 @@ const Tokenomics = () => {
                                                     <li key={i} className="d-inline-block">
                                                         <div className="d-flex align-items-center">
                                                             <div className="dot" style={{backgroundColor: Area.options.colors[i]}}></div>
-                                                            <div className="content">{Area.options.labels[i]}</div>
-                                                            <div><strong className="fw-bold">{el + '%'}</strong></div>
+                                                            <div className="content mr-1">{Area.options.labels[i]}</div>
+                                                            <div> <strong className="fw-bold"> {el + '.00%'}</strong></div>
                                                         </div>
                                                     </li>
                                                 )
