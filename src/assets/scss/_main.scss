@@ -45,7 +45,7 @@
             }
             & .sub_title {
                 position: absolute;
-                top: -95px;
+                top: -85px;
                 right: -145px;
                 letter-spacing: 3.2px;
                 @include font-32;
@@ -55,13 +55,13 @@
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 width: 200px;
-                height: 145px;
+                height: 130px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 z-index: -1;
                 color: $_060205;
-                padding-bottom: 12px;
+                padding-bottom: 2px;
                 @include mmd {
                     top: -36px;
                     right: -105px;
