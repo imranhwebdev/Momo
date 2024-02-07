@@ -94,11 +94,13 @@
                 background: $_white;
                 box-shadow: 3px 3px 0px 0px #000;
                 display: inline-block;
-                line-height: 75px;
                 text-align: center;
                 height: 80px;
                 width: 80px;
                 margin-right: 16px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 &:hover {
                     transform: translateY(-15px);
                 }
@@ -225,8 +227,8 @@
         }
         & .star2 {
             position: absolute;
-            top: -50%;
-            left: -48px;
+            top: -70%;
+            left: -60px;
             z-index: -1;
         }
     }
@@ -1066,12 +1068,13 @@
             border: 1px solid #000;
             background: $_white;
             box-shadow: 3px 3px 0px 0px #000;
-            line-height: 75px;
             text-align: center;
             height: 80px;
             width: 80px;
             margin-right: 16px;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             &:hover {
                 transform: translateY(-15px);
             }

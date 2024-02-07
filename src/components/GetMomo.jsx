@@ -10,7 +10,7 @@ import getMomoTopShap from '../assets/img/get-momo-top-shap.png';
 
 export default function GetMomo() {
     const Momo_btn = "GET NONO";
-    const Momo_btn_link = "https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in";
+    const Momo_btn_link = "https://pancakeswap.finance/swap";
     const buttonData = [
         {
             socialIcon: socialIcon1,

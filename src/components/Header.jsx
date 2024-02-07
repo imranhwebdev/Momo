@@ -44,13 +44,13 @@ export default function Header(){
                     </Nav>
                         <ul className='header_socials'>
                             <li>
-                                <Link href="https://t.me/momotoken2100" target='_blank'><img src={socialLogo1} alt="telegram" /></Link>
+                                <a href="https://t.me/nonoholder" target='_blank'><img src={socialLogo1} alt="telegram" /></a>
                             </li>
                             <li>
-                                <Link href="https://twitter.com/TokenMomo" target='_blank'><img src={socialLogo2} alt="twitter" /></Link>
+                                <a href="https://twitter.com/nonobsc" target='_blank'><img src={socialLogo2} alt="twitter" /></a>
                             </li>
                         </ul>
-                        <Link href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2J4sFeo4HXXqmkcpbUj5wHbb1s4dv4oxJVos8ktVYQS4&fixed=in" target='_blank' className='boxed__btn'>GET NONO</Link>
+                        <a href="https://pancakeswap.finance/swap" target='_blank' className='boxed__btn'>GET NONO</a>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
